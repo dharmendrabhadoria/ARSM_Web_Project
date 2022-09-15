@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da963cbe-3428-47ce-8e40-23d3867a8cf4": {
+      "ProjectGuid": "da963cbe-3428-47ce-8e40-23d3867a8cf4",
+      "DisplayName": "PRSM",
+      "ColorIndex": 0
+    },
+    "3f736904-1d22-4480-bee3-01c132e133e1": {
+      "ProjectGuid": "3f736904-1d22-4480-bee3-01c132e133e1",
+      "DisplayName": "PRSMDAL",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

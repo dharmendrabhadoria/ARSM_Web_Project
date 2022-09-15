@@ -1,0 +1,96 @@
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Rate.btnSave_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Rate.aspx.cs:line 133
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1230
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1231
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1231
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1231
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1232
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1233
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1233
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1233
+------------------Error Source: mscorlib ------------------
+Error Message: Input string was not in a correct format.
+Error StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Master_Customer.btnSaveActivityRate_Click(Object sender, EventArgs e) in d:\TFS-2012\PRSM\PRSM\Master\Customer.aspx.cs:line 1233

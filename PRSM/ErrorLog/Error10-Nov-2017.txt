@@ -1,0 +1,10 @@
+------------------Error Number: 547 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 50
+Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "fk_ModifiedBy_WorkOrder". The conflict occurred in database "PRSM_LIVE", table "dbo.tbl_UserMaster", column 'n_UserId'.
+Time: 10/11/2017 4:55:18 PM
+------------------Error Number: 547 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 50
+Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "fk_ModifiedBy_WorkOrder". The conflict occurred in database "PRSM_LIVE", table "dbo.tbl_UserMaster", column 'n_UserId'.
+Time: 10/11/2017 5:37:19 PM

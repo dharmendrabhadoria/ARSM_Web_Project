@@ -1,0 +1,63 @@
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 11:57:25 AM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:01:03 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:01:29 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:09:12 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:09:14 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:09:27 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:38:26 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2775
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2258
+Time: 20/04/2016 12:38:48 PM
+------------------Error Source: System.Data ------------------
+Error Message: There is no row at position 0.
+Error StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Utility.ErrorHandler.WriteLog(DataSet ds) in D:\tfsprojects\PRSM\Utility\ErrorHandler.cs:line 53
+   at Transaction_MakerAndChecker.btnSave_Click(Object sender, EventArgs e) in d:\tfsprojects\PRSM\PRSM\Transaction\MakerAndChecker.aspx.cs:line 1318
+Time: 20/04/2016 5:33:15 PM

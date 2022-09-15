@@ -1,0 +1,28 @@
+------------------Error Source: System ------------------
+Error Message: The parameter 'addresses' cannot be an empty string.
+Parameter name: addresses
+Error StackTrace:    at System.Net.Mail.MailAddressCollection.Add(String addresses)
+   at Transaction_WorkOrders.sendMail_to_customer() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2022
+   at Transaction_WorkOrders.btnSave_Click(Object sender, EventArgs e) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1962
+Time: 29/04/2016 12:48:26 PM
+------------------Error Source: System ------------------
+Error Message: The parameter 'addresses' cannot be an empty string.
+Parameter name: addresses
+Error StackTrace:    at System.Net.Mail.MailAddressCollection.Add(String addresses)
+   at Transaction_WorkOrders.sendMail_to_customer() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2022
+   at Transaction_WorkOrders.btnSave_Click(Object sender, EventArgs e) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1962
+Time: 29/04/2016 1:08:16 PM
+------------------Error Source: System.Core ------------------
+Error Message: Value cannot be null.
+Parameter name: source
+Error StackTrace:    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Transaction_WorkOrders.GetAcitivityCountByCategory(Int32 iServiceCategoryId) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2774
+   at Transaction_WorkOrders.AddWorkOrderServices() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2257
+Time: 29/04/2016 2:23:41 PM
+------------------Error Source: System ------------------
+Error Message: The parameter 'addresses' cannot be an empty string.
+Parameter name: addresses
+Error StackTrace:    at System.Net.Mail.MailAddressCollection.Add(String addresses)
+   at Transaction_WorkOrders.sendMail_to_customer() in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 2022
+   at Transaction_WorkOrders.btnSave_Click(Object sender, EventArgs e) in d:\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1962
+Time: 29/04/2016 2:31:29 PM

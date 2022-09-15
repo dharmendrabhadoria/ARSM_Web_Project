@@ -1,0 +1,34 @@
+Create function S_FN_Get_LeadImportList()
+returns  table
+As
+   return(select Distinct  LMT.Contact_Name, LMT.Lead_Name,CM.Contact_Id,LMT.Address,LMT.Budget,
+    AppCode_LS.App_Code_Id as Lead_Source_ID,
+    LMT.Lead_Source,
+    AppCode_LStatus.App_Code_Id as Lead_Status_ID,LMT.Lead_Status,LMT.Remark 
+    from S_Lead_Master_TempData LMT
+    left Join S_Contact_Master CM on CM.Contact_Name = LMT.Contact_Name
+    left Join S_Lead_Master LM on LM.Lead_Name = LMT.Lead_Name
+    left Join S_App_Code_Master AppCode_LS on AppCode_LS.App_Code_Value = LMT.Lead_Source
+    left Join S_App_Code_Master AppCode_LStatus on AppCode_LStatus.App_Code_Value = LMT.Lead_Status
+    where LM.Lead_Source_ID is null and LM.Lead_Status_ID is null
+    )
+
+
+
+
+
+--------------------------------------------------------
+
+     Insert into S_Lead_Master(Lead_Name,Contact_ID,Address,Budget,Lead_Source_ID,Lead_Status_ID,Remark) 
+   (
+		select Lead_Name,Contact_ID,Address,Budget,Lead_Source_ID,Lead_Status_ID,Remark from
+		(  
+			select Lead_Name,Contact_ID,Address,Budget,Lead_Source_ID,Lead_Status_ID,Remark, ROW_NUMBER() over ( order  by Lead_Name)  as rownum      
+			from S_FN_Get_LeadImportList()      
+		)	A where rownum <= @Count      
+    )  
+
+
+
+
+

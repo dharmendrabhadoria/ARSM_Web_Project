@@ -1,0 +1,239 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PRSM.master.cs" Inherits="MasterPages_Home" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=8;IE=9;FF=3;OtherUA=4" />
+    <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--%>
+    <title>PRSM - Dashboard</title>
+    <!--[if lte IE 8]>
+<script src="style/script/html5.js"></script>
+<![endif]-->
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/menu.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../Scripts/1.10.4-jquery-ui.js" type="text/javascript"></script>
+    <link href="../Scripts/1.10.4-themes-smoothness-jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/Common.js" type="text/javascript"></script>
+    <link href="../Scripts/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-ui.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <%-- <div>
+       
+    </div>--%>
+    <div class="bodydiv">
+        <div class="header">
+            <div class="logo" style="cursor: default">
+                <a href="#" style="cursor: default">
+                   <%-- <img src="../images/prsm-logo.jpg" /></a></div>--%>
+                     <img src="../images/apaar-logo.png" style="width: 50%" /></a></div>
+            <div class="navigation">
+                <div class="top-links">
+                    <span>Welcome User:
+                        <label runat="server" id="lblUserName">
+                        </label>
+                        <asp:LinkButton runat="server" Width="10" Text="[LogOut]" ID="lnkbtnLogout" OnClick="lnkbtnLogout_Click"></asp:LinkButton>
+                    </span>
+                </div>
+                <div class="nav">
+                    <ul id="nav" style="width: 100%; border-style: none; padding: 0px;" runat="server">
+                        <!-- FO Menu Starts Here -->
+                        <li id="liFrontDeskHome" class="mnuReserve">
+                            <div class="flrgt">
+                                &nbsp;</div>
+                            <a href="#"><span>Home </span></a></li>
+                        <li id="liFrontDeskMaster" class="mnuReserve">
+                            <div class="flrgt">
+                                &nbsp;</div>
+                            <a href="#"><span>Master </span></a>
+                            <div class="subs">
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnServiceCategory" runat="server" OnClick="lnkbtnServiceCategory_Click"
+                                            Text="Service Category"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnActivity" runat="server" OnClick="lnkbtnActivity_Click"
+                                            Text="Activity"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnCompanygroup" runat="server" OnClick="lnkbtnCompanygroup_Click"
+                                            Text="Company Group"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnCustomer" runat="server" OnClick="lnkbtnCustomer_Click"
+                                            Text="Customer"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnRateCard" runat="server" OnClick="lnkbtnRateCard_Click"
+                                            Text="Rate Card"></asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnUserMaster" runat="server" OnClick="lnkbtnUserMaster_Click">User Master</asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnCity" runat="server" OnClick="lnkbtnCity_Click" Text="City"></asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnWareHouse" runat="server" OnClick="lnkbtnWareHouse_Click">WareHouse</asp:LinkButton></li>
+                                    <%-- <li><asp:LinkButton ID="lnkbtnRack" runat="server" onclick="lnkbtnRack_Click" Text="Rack" 
+                                                ></asp:LinkButton></li>--%>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnRowMaster" runat="server" OnClick="lnkbtnRowMaster_Click"
+                                            Text="Row Master"> </asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnviewboxlocation" runat="server" Text="Box Location" OnClick="lnkbtnviewboxlocation_Click"> </asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnViewContract" runat="server" OnClick="lnkbtnViewContract_Click"
+                                            Text="View Contract"> </asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnCompanyMaster" runat="server" OnClick="lnkbtnCompanyMaster_Click"
+                                            Text="Company Master"> </asp:LinkButton></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="liFrontDeskTransaction" class="mnuReserve">
+                            <div class="flrgt">
+                                &nbsp;</div>
+                            <a href="#"><span>Transaction </span></a>
+                            <div class="subs">
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnWorkOrder" runat="server" OnClick="lnkbtnWorkOrder_Click"
+                                            Text="Work Order"> </asp:LinkButton>
+                                    </li>
+                                    <%--    <li>
+                                <asp:LinkButton ID="lnkbtnFreshpickup" runat="server" onclick="lnkbtnFreshpickup_Click" Text="Fresh Pick-up"  
+                                         >  </asp:LinkButton>
+                                </li>--%>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnMakerChecker_new" runat="server"
+                                        OnClick="lnkbtnMakerCheckerNEW_Click" Text="Maker & Checker New">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnMakerChecker" runat="server" OnClick="lnkbtnMakerChecker_Click"
+                                            Text="Maker & Checker">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnUploadPickupData" runat="server" OnClick="lnkbtnUploadPickupData_Click"
+                                            Text="Upload Pickup Data">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnInward" runat="server" OnClick="lnkbtnInward_Click" Text="Inward/Outward">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnPermantreturn" runat="server" OnClick="lnkbtnPermantreturn_Click"
+                                            Text="Permanent Return">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnOtherServices" runat="server" OnClick="lnkbtnOtherServices_Click"
+                                            Text="Other Services">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Management"
+                                            OnClick="lnkbtnInhouseManagement_Click">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtngenerateinvoice" runat="server" Text="Generate Invoice"
+                                            OnClick="lnkbtngenerateinvoice_Click">  </asp:LinkButton>
+                                    </li>
+
+
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtngenerateinvoice_New" runat="server" Text="Generate Invoice New"
+                                            OnClick="lnkbtngenerateinvoice_New_Click">  </asp:LinkButton>
+                                    </li>
+
+
+                                    <%--   <li>
+                                   <asp:LinkButton ID="lnkbtnCloseServiceRequest" runat="server"                      
+                                            Text="Close Service Request" onclick="lnkbtnCloseServiceRequest_Click" 
+                                         >  </asp:LinkButton>                                   
+                                   </li>--%>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnInvoicePayment" runat="server" Text="Invoice Payment" OnClick="lnkbtnInvoicePayment_Click">  </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="liFrontDesk" class="mnuReserve">
+                            <div class="flrgt">
+                                &nbsp;</div>
+                            <a href="#"><span>User </span></a>
+                            <div class="subs last">
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnUserRights" runat="server" OnClick="lnkbtnUserRights_Click"
+                                            Text="User Rights"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnCustomerUser" runat="server" OnClick="lnkbtnCustomerUser_Click"
+                                            Text="Customer User Master"> </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="li1" class="mnuReserve">
+                            <div class="flrgt">
+                                &nbsp;</div>
+                            <a href="#"><span>Report </span></a>
+                            <div class="subs last">
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnReptFilePickup" runat="server" OnClick="lbtnReptFilePickup_Click"
+                                            Text="File Pickup"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnReptRetrieval" runat="server" OnClick="lbtnReptRetrieval_Click"
+                                            Text="Retrieval & Restore"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnReptOtherServices" runat="server" OnClick="lbtnReptOtherServices_Click"
+                                            Text="Other Services"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lblInventoryReportSummary"  runat="server"  Text="Inventory"  OnClick="lblInventoryReportSummary_Click">
+
+                                        </asp:LinkButton>
+                                    </li>
+                                    <%--                              <li>
+                             <asp:LinkButton ID="lbtnReptInventory" runat="server" 
+                                     Text="Inventory Report As On Date" onclick="lbtnReptInventory_Click" ></asp:LinkButton>
+                            </li>
+                                    --%>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnReptClientWiseFileDetails" runat="server" OnClick="lbtnReptClientWiseFileDetails_Click"
+                                            Text="Customer Wise File Details"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkServiceCompletionReport" runat="server" OnClick="lnkServiceCompletionReport_Click"
+                                            Text="Service Completion Report"> </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkSearchBoxesFiles" runat="server" OnClick="lnkSearchBoxesFiles_Click"
+                                            Text="Search Boxes/Files"> </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="middle">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="fotter">
+            © Copyright 2016 PRSM All Rights Reserved PRSM Version 2.3
+        </div>
+    </div>
+    </form>
+</body>
+</html>

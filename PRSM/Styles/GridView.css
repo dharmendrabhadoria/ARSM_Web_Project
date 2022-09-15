@@ -1,0 +1,391 @@
+﻿.GridHeader
+{
+	background-color:#034680 /* #cad3b4*/;
+	border-collapse: separate;
+	margin-bottom: 0px;
+	width: 100%;
+}
+.GridHeader th
+{
+	background-color:#034680 /* #17375e*/;
+	color:#034680 /* #ffffff*/;
+	font-size: 14px;
+	font-weight: bold;
+	height: 24px;
+	margin: 0;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	vertical-align: middle !important;
+	width: 100%;
+}
+.Grid
+{
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.GridRow
+{
+	background-color: #ddf2fc;
+	height: 30px;
+	width: 100%;
+}
+.GridRow td
+{
+	background-image: url(images/TableTDEven.gif);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	height: 30px;
+	padding-left: 10px;
+	
+}
+.GridRow td a
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+.GridRow td td
+{
+	background-image: none;
+	padding-left: 0px;
+}
+.AlternateGridRow
+{
+	background-color: #c5d6e6;
+}
+.AlternateGridRow td
+{
+	background-image: url(images/TableTDOdd.gif);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	height: 30px;
+	padding-left: 10px;border:1px solid red;
+}
+.AlternateGridRow td td
+{
+	background-image: none;
+	padding-left: 0px;
+}
+.AlternateGridRow td a
+{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/************* Hotel Module Grid *****************/
+
+/****************************************************************/
+
+.SearchResultContainer
+{
+	font: 13px Arial, Helvetica, sans-serif;
+	border-collapse: separate;
+	margin-bottom: 0px;
+	width: 100%;
+	margin-top:5px;
+	
+}
+
+.SearchResultContainer table
+{
+	border:1px solid #cccccc;
+}
+
+.SearchResultContainerHeader th
+{
+	height:17px;
+	background-color:#034680 /*#990000*/;
+	color:#fcfce6;
+	/*align-text:left;*/
+	padding:3px;
+	
+}
+.SearchResultContainer td
+{
+	border: 1px solid #C0C0C0;
+}
+
+.SearchResultContainerGrid
+{
+	font: 13px Arial, Helvetica, sans-serif;
+	vertical-align:top;
+}
+.SearchResultGridRow
+{
+	background-color: #fcfce6;
+	height: 30px;
+	width: 100%;
+	vertical-align:top;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px solid #cccccc;
+	text-transform:capitalize !important;
+}
+.SearchResultGridRow td
+{
+	/*background-image: url(images/TableTDEven.gif);
+	background-position: bottom left;
+	background-repeat: repeat-x;*/
+	height: 10px;
+	padding-left: 5px;
+	padding-right:5px;
+	vertical-align:top;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px solid #cccccc;
+	text-transform:capitalize !important;
+}
+.SearchResultGridRow td a
+{
+	color: #990000;
+	font-weight:bold;
+	font-size:11px;
+	text-decoration: none;
+	vertical-align:top;
+}
+.SearchResultGridRow td td
+{
+	background-image: none;
+	padding-left: 0px;
+}
+.SearchResultAlternateGridRow
+{
+	background-color: #eaeadc;
+	height: 30px;
+	width: 100%;
+	vertical-align:top;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px solid #cccccc;
+	text-transform:capitalize !important;
+}
+.SearchResultAlternateGridRow td
+{
+	/*background-image: url(images/TableTDOdd.gif);
+	background-position: bottom left;
+	background-repeat: repeat-x;*/
+	height: 10px;
+	padding-left: 5px;
+	padding-right:5px;
+	background-color:#eaeadc;
+	vertical-align:top;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px solid #cccccc;
+	text-transform:capitalize !important;
+}
+
+.SearchResultAlternateGridRow td td
+{
+	background-image: none;
+	padding-left: 0px;
+	border:none;
+}
+.SearchResultAlternateGridRow td a
+{
+	color: #990000;
+	font-weight:bold;
+	font-size:11px;
+	text-decoration: none;
+	vertical-align:top;
+}
+
+.SearchResultGridPager
+{
+ 	background-image:url(images/Pagebg.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+
+.SearchResultGridPager table
+{
+	border:none;
+}
+
+.SearchResultContainer table table
+{
+	border:none;
+	margin:0px;
+	padding:0px;
+	margin-left:20px;
+
+}
+
+.SearchResultContainer table table td
+{
+	border:none;
+	color:#990000;
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+
+/************* CDMS GridView Created By Deepak Gawade *****************/
+
+/****************************************************************/
+
+
+.CdmsGrid {   
+    width: 100%;   
+    background-color: #fff;   
+    margin: 5px 0 10px 0;   
+    border: solid 1px #525252;   
+    border-collapse:collapse;   
+}  
+.CdmsGrid td
+{
+	padding: 2px; /**border: solid 1px #c1c1c1;   
+    color: #717171;*/
+	 border: solid 1px #c1c1c1;   
+	color: #333333;
+	font-size: 1.0em;
+	font-family:Verdana;
+
+	/*text-align:left;*/
+}  
+.CdmsGrid th
+{
+	padding: 4px 2px;
+	color: #fff;
+	background: #034680 repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+}
+.CdmsGrid th a
+{
+    padding: 4px 2px;
+	color: #fff;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+}      
+.CdmsGrid .alt
+{
+	background: #fcfcfc repeat-x top;
+}  
+.CdmsGrid .pgr
+{
+	background: #FFFFFF repeat-x top;
+}  
+.CdmsGrid .pgr table { margin: 5px 0;   }  
+.CdmsGrid .pgr td
+{
+
+	padding: 0 6px;
+	border-left: solid 1px #c1c1c1;
+	font-weight: bold;
+	color: #034680;
+	line-height: 12px;
+	border-bottom :solid 1px #c1c1c1;
+	border-right :solid 1px #c1c1c1;
+    border-style:double;
+}     
+.CdmsGrid .pgr a { color: #666; text-decoration: none; }  
+.CdmsGrid .pgr a:hover { color: #000; text-decoration: none; } 
+
+/*---       grid for fixed header Style sheet*/
+.GridHeaderfixed
+{
+	background-color:#034680 /* #cad3b4*/;
+	color:#ffffff;
+	font-weight: bold;
+	border-collapse: separate;
+	margin-bottom: 0px;
+	width: 100%;
+}
+.GridHeaderfixed th
+{
+	padding: 4px 2px;
+	color: #fff;
+	background: #034680;
+	border-left: solid 1px #525252;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+
+}
+.GridHeaderfixed td
+{
+	
+	color: #fff;
+	background: #034680;
+	border-left: solid 1px #525252;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+width: 100%;	
+}
+.GridHeaderfixed td td
+{
+	padding: 2px; /**border: solid 1px #c1c1c1; */  
+    color: #717171;
+	 border: solid 1px #c1c1c1;   
+	color: #333333;
+	font-size: 1.0em;
+	font-family:Verdana;
+	/*text-align:left;*/
+}  
+/****************************************************************/
+
+
+.CdmsGridfixed {   
+    width: 100%;   
+    background-color: #fff;   
+    margin: 0px 0 10px 0;   
+    border: solid 1px #525252;   
+    border-collapse:collapse;   
+}  
+.CdmsGridfixed td
+{
+	/**border: solid 1px #c1c1c1;   
+    color: #717171;*/
+	 border: solid 1px #c1c1c1;   
+	color: #333333;
+	font-size: 1.0em;
+	font-family:Verdana;
+
+	/*text-align:left;*/
+}  
+.CdmsGridfixed th
+{
+	color: #fff;
+	background: #034680 repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+}
+.CdmsGridfixed th a
+{
+  
+	color: #fff;
+	font-size: 1.0em;
+	font-family:Verdana;
+	font-weight:bold;
+}      
+.CdmsGridfixed .alt
+{
+	background: #fcfcfc repeat-x top;
+}  
+.CdmsGridfixed .pgr
+{
+	background: #FFFFFF repeat-x top;
+}  
+.CdmsGridfixed .pgr table { margin: 5px 0;   }  
+.CdmsGridfixed .pgr td
+{
+
+	
+	border-left: solid 1px #c1c1c1;
+	font-weight: bold;
+	color: #034680;
+	line-height: 12px;
+	border-bottom :solid 1px #c1c1c1;
+	border-right :solid 1px #c1c1c1;
+    border-style:double;
+}     
+.CdmsGridfixed .pgr a { color: #666; text-decoration: none; }  
+.CdmsGridfixed .pgr a:hover { color: #000; text-decoration: none; } 
+
+/*  Ends Here */

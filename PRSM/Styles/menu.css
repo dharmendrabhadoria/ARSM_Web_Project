@@ -1,0 +1,170 @@
+ul#nav {
+    display:block;
+    float:left;
+    font-family:Calibri;
+    font-size:0;
+	/*background-color:#014581;
+    background: -moz-linear-gradient(#f5f5f5, #c4c4c4);
+    background: -ms-linear-gradient(#f5f5f5, #c4c4c4);  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #c4c4c4));
+    background: -webkit-linear-gradient(#f5f5f5, #c4c4c4);
+    background: -o-linear-gradient(#f5f5f5, #c4c4c4);  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#c4c4c4');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#c4c4c4')"; 
+    background: linear-gradient(#f5f5f5, #c4c4c4);*/
+}
+ul#nav,ul#nav ul {
+    list-style:none;
+    margin:0;
+}
+ul#nav,ul#nav .subs {
+    background-color:#444;
+    border:1px solid #454545;
+}
+ul#nav .subs {
+    background-color:#204a74;
+    border:2px solid #103458;
+	border-top:#224c76 2px solid;
+	font-family:Arial;
+    display:none;
+    float:left;
+    left:0;
+    padding:0px;
+    position:absolute;
+    top:100%;
+    width:200px;
+    z-index:99999;
+		
+}
+/*ul#nav .last{left: -132px;}*/
+ul#nav li:hover>* {
+    display:block;
+}
+ul#nav li:hover {
+    position:relative;
+	background: #999;
+}
+ul#nav ul .subs {
+    left:100%;
+    position:absolute;
+    top:0;
+}
+ul#nav ul {
+    padding:0px;
+}
+ul#nav .col {
+    float:left;
+    width:50%;
+}
+ul#nav li {
+    display:block;
+    float:left;
+    font-size:0;
+    white-space:nowrap;
+}
+ul#nav>li,ul#nav li {
+    margin:0 0 0 0px;
+}
+ul#nav ul>li {
+    margin:5px 0 0;
+}
+ul#nav a:active,ul#nav a:focus {
+    outline-style:none;
+}
+ul#nav a {
+    border-style:none;
+    border-width:0;
+    color:#797979;
+    cursor:pointer;
+    display:block;
+    font-size:16px;
+   
+    text-align:left;
+    text-decoration:none;
+    vertical-align:middle;
+}
+ul#nav ul li {
+    float:none;
+    margin:0px;
+}
+ul#nav ul a {    
+	background-image:url(../images/bg-navcom.jpg);background-repeat:repeat-y;
+    border-color:#153e68;
+    border-style:solid;
+    border-width:0 0 1px;
+    color:#7EA7D1;
+    font-size:13px;
+    padding:7px 10px;
+    text-align:left;
+    text-decoration:none;
+}
+ul#nav li:hover>a {
+    border-style:none;
+    color:#fff;
+    font-size:16px;
+    text-decoration:none;
+}
+ul#nav img {
+    border:none;
+    margin-right:0px;
+    vertical-align:middle;
+}
+ul#nav span {
+    background-position:right center;
+    background-repeat:no-repeat;
+    display:block;
+    overflow:visible;
+    padding-right:0;
+	padding:0 18px 0 7px;	
+}
+ul#nav ul span {
+    background-image:url("../menuimages/arrow.png");
+    padding-right:20px;
+}
+ul#nav ul li:hover>a {
+    background-image:url(../images/nav-hover.jpg);background-repeat:repeat-x;
+    border-color:#0f2c55;
+    border-style:solid;
+    color:#DFE7F0;
+    font-size:13px;
+    text-decoration:none;
+    text-shadow:#fff 0 0 0;
+}
+ul#nav > li >a {
+    background-color:transparent;    
+	float:left;
+	line-height:33px;
+}
+ul#nav > li:hover > a {
+    background-image:url(../images/hover-bg.jpg);background-repeat:repeat-x;
+    line-height:33px;
+}
+
+ul#nav > li > div.flrgt{background-image:url(../images/nav-shadow.jpg);background-repeat:repeat-y;width:12px;float:left;height:33px;}
+ul#nav > li > div.flrgt1{background:transparent !important;background-repeat:repeat-y;width:12px;float:left;height:33px;}
+ul#nav > li:hover > div.flrgt{background-image:url(../images/navh-shadow.jpg);background-repeat:repeat-y;width:12px;float:left;height:33px;}
+ul#nav > li:hover > div.flrgt1{background-image:url(../images/navh-shadow.jpg) !important;background-repeat:repeat-y;width:12px;float:left;height:33px;}
+/*  subs1 Css */
+
+ul#nav,ul#nav .subs1 {
+    background-color:transparent;
+    border:1px solid #454545;
+}
+ul#nav .subs1 {
+    background-color:#fff;
+    border:2px solid #dfab29;
+    display:none;
+    float:left;
+    left:0;
+    padding:0 6px 6px;
+    position:absolute;
+    top:100%;
+    width:300px;
+}
+ul#nav ul .subs1 {
+    left:100%;
+    position:absolute;
+    top:0;
+    
+}
+

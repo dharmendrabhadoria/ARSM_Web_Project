@@ -1,0 +1,63 @@
+﻿body {
+  background:url('http://doc.jsfiddle.net/_downloads/jsfiddle-logo.png');
+  background-size: 10%;
+  background-color: ivory;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.box {
+ 
+  text-align: center;
+   width: 187px;
+            height: 210px;
+            float: left;
+            border: 1px solid rgba(124, 118, 118, 0.28);
+            margin: 7px 0 0 25px;
+            z-index:10; 
+            position:relative;
+  
+}
+
+#box2 {
+  /* The value of margin-left is the width of the FIRST .box including border attribute. */
+  margin-left: 206px;
+}
+
+#box3 {
+  /* The value of margin-left is the width of the FIRST and SECOND .box including border attribute. */
+  margin-left: 412px;
+}
+
+.box:hover{
+  width: 200px;
+ background-color: rgba(229, 241, 250, 0.75);
+  
+  /* Add extra 52px to normal height. Then, 1/2 of that is for top and the other half is for bottom. */
+  height: 270px;
+  
+  /* Below we are using -26px ( 1/2 of total "extra' used for height). */
+  margin-top: -26px;
+  
+  /* Make the border color lighter/brighter than non-hover color */
+  border: 6px solid #52B5D5;
+ 
+  /* Add drop shadow effect */
+  /*   http://www.webestools.com/css3-box-shadow-generator-css-property-easy-shadows-div-html5-drop-shadow-moz-webkit-shadow-maker.html   */
+  -moz-box-shadow:0px 0px 50px 0px #000000;
+  -webkit-box-shadow:0px 0px 50px 0px #000000;
+  box-shadow:0px 0px 50px 0px #000000;
+  
+  /* Add curved corners via CSS3 Border radius to popped item that mimic original website effect */
+  /*   http://border-radius.com/    */
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  /* Give it a higher z-index to it's on top of adjacent items near it. */
+  z-index: 10;
+}
+

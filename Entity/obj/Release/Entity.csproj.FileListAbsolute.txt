@@ -1,0 +1,10 @@
+D:\tfsprojects\PRSM\Entity\bin\Release\Entity.dll
+D:\tfsprojects\PRSM\Entity\bin\Release\Entity.pdb
+D:\tfsprojects\PRSM\Entity\obj\Release\Entity.dll
+D:\tfsprojects\PRSM\Entity\obj\Release\Entity.pdb
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\bin\Release\Entity.dll
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\bin\Release\Entity.pdb
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\obj\Release\Entity.csproj.AssemblyReference.cache
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\obj\Release\Entity.csproj.CoreCompileInputs.cache
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\obj\Release\Entity.dll
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Entity\obj\Release\Entity.pdb

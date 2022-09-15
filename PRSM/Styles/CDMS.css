@@ -1,0 +1,409 @@
+﻿/***Authore:Yogesh Kudale
+Date:27/07/2011**********/
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+.ABody
+{
+    width: 978px;
+    margin: 0 auto;
+    padding: 0px;
+    background: url(images/adminBodyBg.gif) repeat-y top;
+}
+.ABody
+{
+    width: 978px;
+    margin: 0 auto;
+    padding: 0px;
+    background: url(images/adminBodyBg.gif) repeat-y top;
+}
+.ABottomBody
+{
+    margin: 0 auto;
+    padding: 0px;
+    height: 8px;
+    width: 978px;
+}
+.headerContainer
+{
+    text-align: center;
+}
+.headerContainer .header
+{
+    background: url(images/pano_uni_logo.jpg) no-repeat top center;
+    height: 135px;
+    width: 978px;
+    border-bottom: 2px solid #1b5b78;
+}
+.midleContainer
+{
+}
+.midleContainer .dataAera
+{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.loginContainer
+{
+    width: 511px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.loginContainer .loginTop
+{
+    background: url(images/admin_top_line.jpg) no-repeat top left;
+    padding-top: 10px;
+}
+.loginContainer .loginbottom
+{
+    background: url(images/admin_btm_line.jpg) no-repeat bottom left;
+    padding-bottom: 10px;
+}
+.loginContainer .loginCenter
+{
+    background: url(images/admin_center_line.jpg) repeat-y top left;
+}
+#login_title_bg
+{
+    margin: 0 auto;
+}
+#login_title_bg .l_crn
+{
+    background: url(images/admin_l_crn1.jpg) no-repeat top left;
+}
+#login_title_bg .r_crn
+{
+    background: url(images/admin_r_crn1.jpg) no-repeat top right;
+    height: auto;
+}
+#login_title_bg .c_crn
+{
+    font-size: 20px;
+    color: #034680;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+.BoldFont
+{
+    font-weight: bold;
+    color: #1b5b78;
+}
+#ftr
+{
+    font-size: 12px;
+    color: #2b5488;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.MenuContainer
+{
+}
+.MenuContainer .Menu
+{
+    padding: 0px;
+    padding-bottom: 0px;
+}
+.MenuContainer .Menu ul
+{
+    margin-left: 22px;
+}
+.MenuContainer .Menu li
+{
+}
+.MenuContainer .Menu li a
+{
+}
+.ddcolortabs
+{
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    voice-family: "\"}\"";
+    voice-family: inherit;
+}
+.ddcolortabs ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ddcolortabs li
+{
+    display: inline;
+    margin: 0 2px 0 0;
+    padding: 0 0 0 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+.ddcolortabs li.Log
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.ddcolortabs li.rightControl a
+{
+    color: blue;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.ddcolortabs li.rightControl a:hover
+{
+    text-decoration: underline;
+}
+.ddcolortabs a
+{
+    float: left;
+    color: white;
+    background: white url(images/MenuLeft.gif) no-repeat left top;
+    margin: 0 1px 0 0;
+    padding: 0 0px 0px 7px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+.ddcolortabs a span
+{
+    float: left;
+    display: block;
+    background: transparent url(images/MenuRight.gif) no-repeat right top;
+    padding: 3px 9px 5px 0px;
+}
+.ddcolortabs a span
+{
+    float: none;
+}
+.ddcolortabs a:hover
+{
+    background-color: #591f20;
+}
+.ddcolortabs a:hover span
+{
+    background-color: #591f20;
+}
+.ddcolortabs .selected a, #ddcolortabs .selected a span
+{
+    background-color: #008cf8;
+}
+.ddcolortabsline
+{
+    width: 978px;
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 12px;
+    margin: 0 0px 0 0px;
+    border-top: 8px solid #008CF8;
+}
+.dropmenudiv_a
+{
+    position: absolute;
+    top: 0;
+    border: 1px solid #44b3ff;
+    border-bottom-width: 0;
+    font: normal 12px Arial;
+    line-height: 18px;
+    z-index: 100;
+    background-color: white;
+    width: 200px;
+    visibility: hidden;
+}
+.dropmenudiv_a a
+{
+    width: auto;
+    display: block;
+    text-indent: 5px;
+    border-top: 0 solid #678b3f;
+    border-bottom: 1px solid #44b3ff;
+    padding: 2px 0;
+    text-decoration: none;
+    color: black;
+}
+* html .dropmenudiv_a a
+{
+    width: 100%;
+}
+.dropmenudiv_a a:hover
+{
+    background-color: #44b3ff;
+    color: white;
+}
+.hotel_data
+{
+    margin: 0 auto;
+    border: 1px solid #333;
+    width: 900px;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.w70
+{
+    width: 70px;
+}
+.w80
+{
+    width: 80px;
+}
+.w100
+{
+    width: 250px;
+}
+.w90
+{
+    width: 90px;
+}
+.w110
+{
+    width: 400px;
+}
+.w458
+{
+    width: 458px;
+}
+.w200
+{
+    width: 200px;
+}
+.Center
+{
+    text-align: center;
+}
+/*.btnbg{ border-style: none;border-color: inherit;border-width: 0;background: url('images/SignBtn.jpg') no-repeat 50% top;height:26px; width:71px; padding:0; color:#FFF; font-size:13px; font-weight:bold; cursor:pointer;}*/
+.login
+{
+    font-size: 20px;
+    color: #666;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rightControl
+{
+    float: right;
+}
+.clearBoth
+{
+    clear: both;
+}
+
+/* css for tab */
+ul.tabs
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px; /*--Set height of tabs--*/
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 100%;
+}
+ul.tabs li
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+    line-height: 31px; /*--Vertically aligns the text within the tab--*/
+    border: 1px solid #999;
+    border-left: none;
+    margin-bottom: -1px; /*--Pull the list item down 1px--*/
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
+}
+ul.tabs li a
+{
+    text-decoration: none;
+    color: blue;
+    display: block;
+    font-size: 1.2em;
+    padding: 0 20px;
+    border: 1px solid white; /*--Gives the bevel look with a 1px white border inside the list item--*/
+    outline: none;
+}
+ul.tabs li a:hover
+{
+    background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover
+{
+    /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #fff;
+    border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+.tab_container
+{
+    border: 0px solid #999;
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+.tab_content
+{
+    padding: 10px;
+    font-size: 1.0em;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.RubberBandBox
+{
+    overflow: hidden;
+    padding: 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background-color: #666666;
+    border: 0px solid #596380; /*z-index:3;*/
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+}
+
+.RubberBandBox img
+{
+    left: 50%;
+    top: 50%;
+    position: absolute; /*z-index:0   */
+}
+
+.modalBackground
+{
+    background-color: #cccccc;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+
+.modalPopup
+{
+    background-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width: 320px;
+}
+.headerttt
+{
+    font-weight: bold;
+    position: fixed;
+    background-color: White;
+}

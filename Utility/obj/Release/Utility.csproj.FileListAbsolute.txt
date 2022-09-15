@@ -1,0 +1,10 @@
+D:\tfsprojects\PRSM\Utility\bin\Release\Utility.dll
+D:\tfsprojects\PRSM\Utility\bin\Release\Utility.pdb
+D:\tfsprojects\PRSM\Utility\obj\Release\Utility.dll
+D:\tfsprojects\PRSM\Utility\obj\Release\Utility.pdb
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\bin\Release\Utility.dll
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\bin\Release\Utility.pdb
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\obj\Release\Utility.csproj.AssemblyReference.cache
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\obj\Release\Utility.csproj.CoreCompileInputs.cache
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\obj\Release\Utility.dll
+C:\Users\LalitRajput\Desktop\Lalit_LMS\PRSM\PRSM\Utility\obj\Release\Utility.pdb

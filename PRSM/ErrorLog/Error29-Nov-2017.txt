@@ -1,0 +1,111 @@
+------------------Error Source: System.Data ------------------
+Error Message: There is no row at position 0.
+Error StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4928
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 11:53:49 AM
+------------------Error Source: System.Data ------------------
+Error Message: There is no row at position 0.
+Error StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4928
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 11:56:39 AM
+------------------Error Source: System.Data ------------------
+Error Message: There is no row at position 0.
+Error StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4928
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 12:07:09 PM
+------------------Error Source: System ------------------
+Error Message: The remote server returned an error: (503) Server Unavailable.
+Error StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at iTextSharp.text.html.simpleparser.ElementFactory.CreateImage(String src, IDictionary`2 attrs, ChainedProperties chain, IDocListener document, IImageProvider img_provider, Dictionary`2 img_store, String img_baseurl)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.CreateImage(IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLTagProcessors.HTMLTagProcessor_IMG.StartElement(HTMLWorker worker, String tag, IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.StartElement(String tag, IDictionary`2 attrs)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.ProcessTag(Boolean start)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Go(TextReader reader)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Parse(ISimpleXMLDocHandler doc, ISimpleXMLDocHandlerComment comment, TextReader r, Boolean html)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.Parse(TextReader reader)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, IDictionary`2 tags, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4932
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 12:19:49 PM
+------------------Error Source: System ------------------
+Error Message: The remote server returned an error: (503) Server Unavailable.
+Error StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at iTextSharp.text.html.simpleparser.ElementFactory.CreateImage(String src, IDictionary`2 attrs, ChainedProperties chain, IDocListener document, IImageProvider img_provider, Dictionary`2 img_store, String img_baseurl)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.CreateImage(IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLTagProcessors.HTMLTagProcessor_IMG.StartElement(HTMLWorker worker, String tag, IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.StartElement(String tag, IDictionary`2 attrs)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.ProcessTag(Boolean start)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Go(TextReader reader)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Parse(ISimpleXMLDocHandler doc, ISimpleXMLDocHandlerComment comment, TextReader r, Boolean html)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.Parse(TextReader reader)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, IDictionary`2 tags, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4932
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 12:20:55 PM
+------------------Error Source: System ------------------
+Error Message: The remote server returned an error: (503) Server Unavailable.
+Error StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at iTextSharp.text.html.simpleparser.ElementFactory.CreateImage(String src, IDictionary`2 attrs, ChainedProperties chain, IDocListener document, IImageProvider img_provider, Dictionary`2 img_store, String img_baseurl)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.CreateImage(IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLTagProcessors.HTMLTagProcessor_IMG.StartElement(HTMLWorker worker, String tag, IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.StartElement(String tag, IDictionary`2 attrs)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.ProcessTag(Boolean start)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Go(TextReader reader)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Parse(ISimpleXMLDocHandler doc, ISimpleXMLDocHandlerComment comment, TextReader r, Boolean html)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.Parse(TextReader reader)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, IDictionary`2 tags, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4932
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 12:21:40 PM
+------------------Error Source: System ------------------
+Error Message: The remote server returned an error: (503) Server Unavailable.
+Error StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at iTextSharp.text.html.simpleparser.ElementFactory.CreateImage(String src, IDictionary`2 attrs, ChainedProperties chain, IDocListener document, IImageProvider img_provider, Dictionary`2 img_store, String img_baseurl)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.CreateImage(IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLTagProcessors.HTMLTagProcessor_IMG.StartElement(HTMLWorker worker, String tag, IDictionary`2 attrs)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.StartElement(String tag, IDictionary`2 attrs)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.ProcessTag(Boolean start)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Go(TextReader reader)
+   at iTextSharp.text.xml.simpleparser.SimpleXMLParser.Parse(ISimpleXMLDocHandler doc, ISimpleXMLDocHandlerComment comment, TextReader r, Boolean html)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.Parse(TextReader reader)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, IDictionary`2 tags, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style, Dictionary`2 providers)
+   at iTextSharp.text.html.simpleparser.HTMLWorker.ParseToList(TextReader reader, StyleSheet style)
+   at Transaction_WorkOrders.ConcreteBuilder.GetWoHeader() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4932
+   at Transaction_WorkOrders.ConcreteBuilder.BuildFilePickup() in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4812
+   at Transaction_WorkOrders.Director.Construct(IBuilder builder) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 4703
+   at Transaction_WorkOrders.btnGenerate_Click(Object sender, EventArgs e) in d:\WORKING_Project\tfsprojects\PRSM\PRSM\Transaction\WorkOrders.aspx.cs:line 1701
+Time: 11/29/2017 12:22:31 PM

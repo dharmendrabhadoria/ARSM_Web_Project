@@ -1,0 +1,114 @@
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 2:30:32 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 2:33:06 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 2:35:47 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 2:46:25 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 2:55:51 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 3:05:10 PM
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fn_GetWOBoxFileCount", or the name is ambiguous.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.TransactionDAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMDAL\TransactionDAL.cs:line 507
+   at PRSMBAL.TransactionBAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMBAL\TransactionBAL.cs:line 191
+   at Transaction_MakerAndChecker_New.btnApprove_Click(Object sender, EventArgs e) in c:\Users\rajesh.chandras\Desktop\PRSM\PRSM\Transaction\MakerAndChecker_New.aspx.cs:line 548
+Time: 19/04/2016 3:20:40 PM
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fn_GetWOBoxFileCount", or the name is ambiguous.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.TransactionDAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMDAL\TransactionDAL.cs:line 507
+   at PRSMBAL.TransactionBAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMBAL\TransactionBAL.cs:line 191
+   at Transaction_MakerAndChecker_New.btnApprove_Click(Object sender, EventArgs e) in c:\Users\rajesh.chandras\Desktop\PRSM\PRSM\Transaction\MakerAndChecker_New.aspx.cs:line 548
+Time: 19/04/2016 3:21:34 PM
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Cannot find either column "dbo" or the user-defined function or aggregate "dbo.fn_GetWOBoxFileCount", or the name is ambiguous.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.TransactionDAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMDAL\TransactionDAL.cs:line 507
+   at PRSMBAL.TransactionBAL.ApproveFileDetails(Int32 iCustomerId, Int16 iWareHouseId, String xmlFileDetails, Int32 iWono, Int16 iModifiedBy, Byte iIsnew) in C:\Users\rajesh.chandras\Desktop\PRSM\PRSMBAL\TransactionBAL.cs:line 191
+   at Transaction_MakerAndChecker_New.btnApprove_Click(Object sender, EventArgs e) in c:\Users\rajesh.chandras\Desktop\PRSM\PRSM\Transaction\MakerAndChecker_New.aspx.cs:line 548
+Time: 19/04/2016 3:21:57 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 3:58:14 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 4:09:15 PM
+------------------Error Number: 50000 ------------------
+Procedure Name: usp_InsertUpdateWorkOrder
+Line No: 149
+Error Message: Error In Inserting Work Order Activity.
+Time: 19/04/2016 4:51:47 PM

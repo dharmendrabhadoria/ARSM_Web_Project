@@ -1,0 +1,13 @@
+
+#table-container {
+  position: relative;
+  width: auto;
+  height: 280px;
+  overflow: auto;
+  background-color: #FFF;
+  border: 1px solid #596380;
+  padding: 0 10px 0 0;
+}
+
+
+

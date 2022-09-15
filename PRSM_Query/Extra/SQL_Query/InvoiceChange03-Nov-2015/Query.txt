@@ -1,0 +1,95 @@
+select * from tbl_invoicesummary where n_InvoiceNo = 2015000078
+
+begin tran
+update tbl_invoicesummary set n_TransAmount=1260.00,n_InvoiceAmount=24800.50,n_TotalAmount=24800.50 where n_InvoiceNo = 2015000078
+commit
+
+
+1260
+24800.5
+select * from tbl_invoicedetails where n_InvoiceNo = 2015000078
+
+begin tran
+delete tbl_invoicedetails where n_InvoiceDetailId = 864
+commit
+
+
+insert tbl_invoicesummary ( n_InvoiceNo , n_MonthYear, n_WareHouseId, n_customerId , n_pickupaddressid , n_StorageCharges, n_TransAmount , n_InvoiceAmount , n_ServiceTax, n_EduTax, n_OtherTax , n_TotalAmount , d_ModifiedDate, n_ModifiedBy , n_HigherEducation, s_Remark) 
+values  (2015000122,201512,	1,	10,	16,37073.75,81655.00,118728.75,	0.00,	0.00,	0.00,	118728.75,	'2015-12-01 09:35:55.513',	1,	0.00,	NULL)
+
+Insert Into tbl_invoicedetails(n_InvoiceNo,n_WoActivityId,n_ActivityCount,n_Amount)
+select 2015000122,n_WoActivityId,n_ActivityCount,n_Amount from tbl_invoicedetails where n_InvoiceNo = 2015000121
+
+
+
+select * from tbl_invoicesummary_New where n_InvoiceNo = 2015000122
+select * from tbl_invoicedetails_New where n_InvoiceNo = 2015000122
+
+Delete from tbl_InvoiceSummary_New where n_InvoiceNo = 2015011008
+
+--update tbl_invoicesummary set n_InvoiceAmount=81655.00,N_TotalAmount=81655.00 where n_InvoiceNo=2015000122
+--update tbl_invoicesummary set n_StorageCharges =0.00 where n_InvoiceNo=2015000122
+
+
+
+--update tbl_invoicesummary_New set n_InvoiceAmount=41615.00,N_TotalAmount=41615.00 where n_InvoiceNo=2015000121
+--update tbl_invoicesummary_New set n_StorageCharges=41615.00 where n_InvoiceNo=2015000121
+--update tbl_invoicesummary_New set n_TransAmount=0 where n_InvoiceNo=2015000121
+--update tbl_invoicesummary_New set n_ServiceTax=194.60,n_EduTax = 6.95,n_HigherEducation= 6.95 where n_InvoiceNo=2016000166
+
+--select * from tbl_invoicedetails where n_WoActivityId in (496,497,498,499,500,501,508,509)and n_InvoiceNo=2016000010
+
+--delete from tbl_invoicedetails where n_WoActivityId in (496,497,498,499,500,501,508,509)and n_InvoiceNo=2015000121
+
+--update tbl_invoicesummary set d_ModifiedDate ='2016-01-05 09:35:55.513' where n_InvoiceNo = 2015000122 
+
+update tbl_invoicedetails set n_Amount = 0.00 where n_InvoiceDetailId in(1071,1075) and n_InvoiceNo = 2015000111
+
+
+
+
+--    update tfd 
+--    set tfd.n_ApproveStatus = 146 , tfd.d_Checkerdate = getdate() , tfd.n_CheckerBy = 1
+--    from tbl_Filedetails tfd 
+--join tbl_Filetransactions Tfs on tfd.n_fileid=Tfs.n_fileid
+--join tbl_ApplicationCodeMaster ACM on ACM.n_AppCodeId=tfd.n_Departmentid
+----where tfd.s_Filebarcode in('636012','2552450','751011')
+--where tfs.n_woactivityid=638 
+
+--insert into tbl_invoicedetails (n_InvoiceNo ,n_WoActivityId	  ,n_ActivityCount  ,n_Amount )
+--						 values(2016000061  ,807			  ,1			    ,1236.00	  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--begin tran
+--update tbl_Invoicesummary_New 
+--set 
+--    n_InvoiceAmount		=	41744.00
+--   ,N_TotalAmount		=	48005.6
+--   ,n_StorageCharges	=   34048
+--   ,n_ServiceTax		=   5844.16	 
+--   ,n_EduTax			=	208.72
+--   ,n_HigherEducation	=	208.72
+--   --,n_TransAmount		=   00.00
+--   where n_InvoiceNo	=	2016000278
+
+--commit
+
+
+
+
