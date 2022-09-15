@@ -231,7 +231,7 @@
             </div>
         </div>
         <div class="fotter">
-            © Copyright 2016 PRSM All Rights Reserved PRSM Version 2.3
+           <%-- © Copyright 2016 PRSM All Rights Reserved PRSM Version 2.3--%>
         </div>
     </div>
     </form>
