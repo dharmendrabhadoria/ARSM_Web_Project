@@ -53,15 +53,24 @@
                             <a href="#"><span>Master </span></a>
                             <div class="subs">
                                 <ul>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnServiceCategory" runat="server" OnClick="lnkbtnServiceCategory_Click"
-                                            Text="Service Category"></asp:LinkButton>
-                                    </li>
-                                    <li>
+                                     <li>
                                         <asp:LinkButton ID="lnkbtnActivity" runat="server" OnClick="lnkbtnActivity_Click"
                                             Text="Activity"></asp:LinkButton>
                                     </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnviewboxlocation" runat="server" Text="Box Location" OnClick="lnkbtnviewboxlocation_Click"> </asp:LinkButton>
+
+                                    </li>
                                     <li>
+                                        <asp:LinkButton ID="lnkbtnCity" runat="server" OnClick="lnkbtnCity_Click" Text="City"></asp:LinkButton>
+
+                                    </li>
+                                      <li>
+                                        <asp:LinkButton ID="lnkbtnCompanyMaster" runat="server" OnClick="lnkbtnCompanyMaster_Click"
+                                            Text="Company Master"> </asp:LinkButton>
+
+                                    </li>
+                                     <li>
                                         <asp:LinkButton ID="lnkbtnCompanygroup" runat="server" OnClick="lnkbtnCompanygroup_Click"
                                             Text="Company Group"></asp:LinkButton>
                                     </li>
@@ -69,28 +78,42 @@
                                         <asp:LinkButton ID="lnkbtnCustomer" runat="server" OnClick="lnkbtnCustomer_Click"
                                             Text="Customer"></asp:LinkButton>
                                     </li>
-                                    <li>
+                                     <li>
                                         <asp:LinkButton ID="lnkbtnRateCard" runat="server" OnClick="lnkbtnRateCard_Click"
-                                            Text="Rate Card"></asp:LinkButton></li>
+                                            Text="Rate Card"></asp:LinkButton>
+
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnRowMaster" runat="server" OnClick="lnkbtnRowMaster_Click"
+                                            Text="Row Master"> </asp:LinkButton>
+
+                                    </li>
                                     <li>
-                                        <asp:LinkButton ID="lnkbtnUserMaster" runat="server" OnClick="lnkbtnUserMaster_Click">User Master</asp:LinkButton></li>
+                                        <asp:LinkButton ID="lnkbtnServiceCategory" runat="server" OnClick="lnkbtnServiceCategory_Click"
+                                            Text="Service Category"></asp:LinkButton>
+                                    </li>
+                                   
+                                   
+                                    
+                                   
                                     <li>
-                                        <asp:LinkButton ID="lnkbtnCity" runat="server" OnClick="lnkbtnCity_Click" Text="City"></asp:LinkButton></li>
+                                        <asp:LinkButton ID="lnkbtnUserMaster" runat="server" OnClick="lnkbtnUserMaster_Click">User Master</asp:LinkButton>
+
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnViewContract" runat="server" OnClick="lnkbtnViewContract_Click"
+                                            Text="View Contract"> </asp:LinkButton>
+
+                                    </li>
                                     <li>
                                         <asp:LinkButton ID="lnkbtnWareHouse" runat="server" OnClick="lnkbtnWareHouse_Click">WareHouse</asp:LinkButton></li>
                                     <%-- <li><asp:LinkButton ID="lnkbtnRack" runat="server" onclick="lnkbtnRack_Click" Text="Rack" 
                                                 ></asp:LinkButton></li>--%>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnRowMaster" runat="server" OnClick="lnkbtnRowMaster_Click"
-                                            Text="Row Master"> </asp:LinkButton></li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnviewboxlocation" runat="server" Text="Box Location" OnClick="lnkbtnviewboxlocation_Click"> </asp:LinkButton></li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnViewContract" runat="server" OnClick="lnkbtnViewContract_Click"
-                                            Text="View Contract"> </asp:LinkButton></li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnCompanyMaster" runat="server" OnClick="lnkbtnCompanyMaster_Click"
-                                            Text="Company Master"> </asp:LinkButton></li>
+                                   
+                                   
+                                  
+                                   
+                                  
                                 </ul>
                             </div>
                         </li>
@@ -100,41 +123,7 @@
                             <a href="#"><span>Transaction </span></a>
                             <div class="subs">
                                 <ul>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnWorkOrder" runat="server" OnClick="lnkbtnWorkOrder_Click"
-                                            Text="Work Order"> </asp:LinkButton>
-                                    </li>
-                                    <%--    <li>
-                                <asp:LinkButton ID="lnkbtnFreshpickup" runat="server" onclick="lnkbtnFreshpickup_Click" Text="Fresh Pick-up"  
-                                         >  </asp:LinkButton>
-                                </li>--%>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnMakerChecker_new" runat="server"
-                                        OnClick="lnkbtnMakerCheckerNEW_Click" Text="Maker & Checker New">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnMakerChecker" runat="server" OnClick="lnkbtnMakerChecker_Click"
-                                            Text="Maker & Checker">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnUploadPickupData" runat="server" OnClick="lnkbtnUploadPickupData_Click"
-                                            Text="Upload Pickup Data">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnInward" runat="server" OnClick="lnkbtnInward_Click" Text="Inward/Outward">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnPermantreturn" runat="server" OnClick="lnkbtnPermantreturn_Click"
-                                            Text="Permanent Return">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnOtherServices" runat="server" OnClick="lnkbtnOtherServices_Click"
-                                            Text="Other Services">  </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Management"
-                                            OnClick="lnkbtnInhouseManagement_Click">  </asp:LinkButton>
-                                    </li>
+
                                     <li>
                                         <asp:LinkButton ID="lnkbtngenerateinvoice" runat="server" Text="Generate Invoice"
                                             OnClick="lnkbtngenerateinvoice_Click">  </asp:LinkButton>
@@ -145,6 +134,56 @@
                                         <asp:LinkButton ID="lnkbtngenerateinvoice_New" runat="server" Text="Generate Invoice New"
                                             OnClick="lnkbtngenerateinvoice_New_Click">  </asp:LinkButton>
                                     </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Management"
+                                            OnClick="lnkbtnInhouseManagement_Click">  </asp:LinkButton>
+                                    </li>
+                                      <li>
+                                        <asp:LinkButton ID="lnkbtnInvoicePayment" runat="server" Text="Invoice Payment" OnClick="lnkbtnInvoicePayment_Click">  </asp:LinkButton>
+                                    </li>
+
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnInward" runat="server" OnClick="lnkbtnInward_Click" Text="Inward/Outward">  </asp:LinkButton>
+                                    </li>
+
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnMakerChecker" runat="server" OnClick="lnkbtnMakerChecker_Click"
+                                            Text="Maker & Checker">  </asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnMakerChecker_new" runat="server"
+                                        OnClick="lnkbtnMakerCheckerNEW_Click" Text="Maker & Checker New">  </asp:LinkButton>
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnOtherServices" runat="server" OnClick="lnkbtnOtherServices_Click"
+                                            Text="Other Services">  </asp:LinkButton>
+                                    </li>
+                                   
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnPermantreturn" runat="server" OnClick="lnkbtnPermantreturn_Click"
+                                            Text="Permanent Return">  </asp:LinkButton>
+                                    </li>
+
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnUploadPickupData" runat="server" OnClick="lnkbtnUploadPickupData_Click"
+                                            Text="Upload Pickup Data">  </asp:LinkButton>
+                                    </li>
+
+                                    
+                                    <li>
+                                        <asp:LinkButton ID="lnkbtnWorkOrder" runat="server" OnClick="lnkbtnWorkOrder_Click"
+                                            Text="Work Order"> </asp:LinkButton>
+                                    </li>
+                                    <%--    <li>
+                                <asp:LinkButton ID="lnkbtnFreshpickup" runat="server" onclick="lnkbtnFreshpickup_Click" Text="Fresh Pick-up"  
+                                         >  </asp:LinkButton>
+                                </li>--%>
+                                    
+                                   
+                                   
+                                   
+                                   
+                                   
 
 
                                     <%--   <li>
@@ -152,9 +191,7 @@
                                             Text="Close Service Request" onclick="lnkbtnCloseServiceRequest_Click" 
                                          >  </asp:LinkButton>                                   
                                    </li>--%>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnInvoicePayment" runat="server" Text="Invoice Payment" OnClick="lnkbtnInvoicePayment_Click">  </asp:LinkButton>
-                                    </li>
+                                  
                                 </ul>
                             </div>
                         </li>
@@ -164,14 +201,15 @@
                             <a href="#"><span>User </span></a>
                             <div class="subs last">
                                 <ul>
+                                     <li>
+                                        <asp:LinkButton ID="lnkbtnCustomerUser" runat="server" OnClick="lnkbtnCustomerUser_Click"
+                                            Text="Customer User Master"> </asp:LinkButton>
+                                    </li>
                                     <li>
                                         <asp:LinkButton ID="lnkbtnUserRights" runat="server" OnClick="lnkbtnUserRights_Click"
                                             Text="User Rights"> </asp:LinkButton>
                                     </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkbtnCustomerUser" runat="server" OnClick="lnkbtnCustomerUser_Click"
-                                            Text="Customer User Master"> </asp:LinkButton>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </li>
@@ -181,40 +219,49 @@
                             <a href="#"><span>Report </span></a>
                             <div class="subs last">
                                 <ul>
+                                     <li>
+                                        <asp:LinkButton ID="lbtnReptClientWiseFileDetails" runat="server" OnClick="lbtnReptClientWiseFileDetails_Click"
+                                            Text="Customer Wise File Details"> </asp:LinkButton>
+                                    </li>
                                     <li>
                                         <asp:LinkButton ID="lbtnReptFilePickup" runat="server" OnClick="lbtnReptFilePickup_Click"
                                             Text="File Pickup"> </asp:LinkButton>
                                     </li>
-                                    <li>
-                                        <asp:LinkButton ID="lbtnReptRetrieval" runat="server" OnClick="lbtnReptRetrieval_Click"
-                                            Text="Retrieval & Restore"> </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lbtnReptOtherServices" runat="server" OnClick="lbtnReptOtherServices_Click"
-                                            Text="Other Services"> </asp:LinkButton>
-                                    </li>
-                                    <li>
+                                     <li>
                                         <asp:LinkButton ID="lblInventoryReportSummary"  runat="server"  Text="Inventory"  OnClick="lblInventoryReportSummary_Click">
 
                                         </asp:LinkButton>
                                     </li>
+
+                                      <li>
+                                        <asp:LinkButton ID="lbtnReptOtherServices" runat="server" OnClick="lbtnReptOtherServices_Click"
+                                            Text="Other Services"> </asp:LinkButton>
+                                    </li>
+                                   
+
+                                    <li>
+                                        <asp:LinkButton ID="lbtnReptRetrieval" runat="server" OnClick="lbtnReptRetrieval_Click"
+                                            Text="Retrieval & Restore"> </asp:LinkButton>
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkSearchBoxesFiles" runat="server" OnClick="lnkSearchBoxesFiles_Click"
+                                            Text="Search Boxes/Files"> </asp:LinkButton>
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton ID="lnkServiceCompletionReport" runat="server" OnClick="lnkServiceCompletionReport_Click"
+                                            Text="Service Completion Report"> </asp:LinkButton>
+                                    </li>
+
+
+                                  
                                     <%--                              <li>
                              <asp:LinkButton ID="lbtnReptInventory" runat="server" 
                                      Text="Inventory Report As On Date" onclick="lbtnReptInventory_Click" ></asp:LinkButton>
                             </li>
                                     --%>
-                                    <li>
-                                        <asp:LinkButton ID="lbtnReptClientWiseFileDetails" runat="server" OnClick="lbtnReptClientWiseFileDetails_Click"
-                                            Text="Customer Wise File Details"> </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkServiceCompletionReport" runat="server" OnClick="lnkServiceCompletionReport_Click"
-                                            Text="Service Completion Report"> </asp:LinkButton>
-                                    </li>
-                                    <li>
-                                        <asp:LinkButton ID="lnkSearchBoxesFiles" runat="server" OnClick="lnkSearchBoxesFiles_Click"
-                                            Text="Search Boxes/Files"> </asp:LinkButton>
-                                    </li>
+                                   
+                                   
+                                   
                                 </ul>
                             </div>
                         </li>
