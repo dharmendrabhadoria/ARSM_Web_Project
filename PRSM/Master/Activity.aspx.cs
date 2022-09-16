@@ -170,7 +170,8 @@ public partial class Master_ServiceActivity : PageBase
         }
         else
         {
-            lblMessage.Text = "";
+            BindActivity();
+            // lblMessage.Text = "";
         }
     }
     #region [Rolewise access page funcationality]
