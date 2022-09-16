@@ -22,3 +22,9 @@ D:\Dharmendra\Development\PRSM\PRSM\Entity\bin\Debug\Entity.pdb
 D:\Dharmendra\Development\PRSM\PRSM\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
 D:\Dharmendra\Development\PRSM\PRSM\Entity\obj\Debug\Entity.dll
 D:\Dharmendra\Development\PRSM\PRSM\Entity\obj\Debug\Entity.pdb
+D:\Dharmendra\Development\ARSM\Entity\bin\Debug\Entity.dll
+D:\Dharmendra\Development\ARSM\Entity\bin\Debug\Entity.pdb
+D:\Dharmendra\Development\ARSM\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+D:\Dharmendra\Development\ARSM\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+D:\Dharmendra\Development\ARSM\Entity\obj\Debug\Entity.dll
+D:\Dharmendra\Development\ARSM\Entity\obj\Debug\Entity.pdb

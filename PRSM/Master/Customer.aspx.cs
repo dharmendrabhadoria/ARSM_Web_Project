@@ -155,6 +155,7 @@ public partial class Master_Customer : PageBase
             ddlbillingState.ClearSelection();
 
             if (Convert.ToString(dtC.Rows[0]["BillingMode"]) == null || Convert.ToString(dtC.Rows[0]["BillingMode"]) == "")
+           
             {
                 ddlBillingMode.SelectedIndex = 1;
             }

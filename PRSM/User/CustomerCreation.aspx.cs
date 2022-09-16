@@ -239,7 +239,7 @@ public partial class User_CustomerCreation : PageBase
     {
         gvUserMaster.DataSource = null;
         gvUserMaster.DataBind();
-        DataSet ds = objPRSMBAL.GetCustomerUserDetails(0);
+        DataSet ds = objPRSMBAL.GetCustomerUserDetails(1);
         if (ds.Tables.Count > 0)
         {
             if (ds.Tables[0].Rows.Count > 0)

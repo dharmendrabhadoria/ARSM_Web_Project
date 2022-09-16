@@ -51,3 +51,15 @@ D:\Dharmendra\Development\PRSM\PRSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.CopyComplet
 D:\Dharmendra\Development\PRSM\PRSM\PRSMDAL\obj\Debug\PRSMDAL.dll
 D:\Dharmendra\Development\PRSM\PRSM\PRSMDAL\obj\Debug\PRSMDAL.pdb
 D:\Dharmendra\Development\PRSM\PRSM\PRSMDAL\obj\Debug\PRSMDAL.csprojAssemblyReference.cache
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\PRSMDAL.dll
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\PRSMDAL.pdb
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\Entity.dll
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\Utility.dll
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\Entity.pdb
+D:\Dharmendra\Development\ARSM\PRSMDAL\bin\Debug\Utility.pdb
+D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.AssemblyReference.cache
+D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.CoreCompileInputs.cache
+D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.CopyComplete
+D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.dll
+D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.pdb

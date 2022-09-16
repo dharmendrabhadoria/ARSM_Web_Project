@@ -23,3 +23,9 @@ D:\Dharmendra\Development\PRSM\PRSM\Utility\bin\Debug\Utility.pdb
 D:\Dharmendra\Development\PRSM\PRSM\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
 D:\Dharmendra\Development\PRSM\PRSM\Utility\obj\Debug\Utility.dll
 D:\Dharmendra\Development\PRSM\PRSM\Utility\obj\Debug\Utility.pdb
+D:\Dharmendra\Development\ARSM\Utility\bin\Debug\Utility.dll
+D:\Dharmendra\Development\ARSM\Utility\bin\Debug\Utility.pdb
+D:\Dharmendra\Development\ARSM\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+D:\Dharmendra\Development\ARSM\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+D:\Dharmendra\Development\ARSM\Utility\obj\Debug\Utility.dll
+D:\Dharmendra\Development\ARSM\Utility\obj\Debug\Utility.pdb

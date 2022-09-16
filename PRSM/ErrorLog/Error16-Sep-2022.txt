@@ -1,0 +1,51 @@
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Could not find stored procedure 'usp_CheckRowMasterName'.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.MasterDAL.IsRowMasterNameExist(Int32 nRowId, String strRowName, Int32 nWareHouseId) in D:\Dharmendra\Development\ARSM\PRSMDAL\MasterDAL.cs:line 1061
+Time: 16-09-2022 12:53:42
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Procedure or function usp_InsertUpdateCustomer has too many arguments specified.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.MasterDAL.AddUpdateCustomer(Customer objCustomer) in D:\Dharmendra\Development\ARSM\PRSMDAL\MasterDAL.cs:line 427
+Time: 16-09-2022 14:27:21
+------------------Error Source: .Net SqlClient Data Provider ------------------
+Error Message: Procedure or function usp_InsertUpdateCustomer has too many arguments specified.
+Error StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at PRSMDAL.MasterDAL.AddUpdateCustomer(Customer objCustomer) in D:\Dharmendra\Development\ARSM\PRSMDAL\MasterDAL.cs:line 427
+Time: 16-09-2022 14:31:09
+------------------Error Source: PRSMDAL ------------------
+Error Message: Index was outside the bounds of the array.
+Error StackTrace:    at PRSMDAL.MasterDAL.AddUpdateCustomer(Customer objCustomer) in D:\Dharmendra\Development\ARSM\PRSMDAL\MasterDAL.cs:line 428
+   at PRSMBAL.MasterBAL.AddUpdateCustomer(Customer ObjCompanyGroup) in D:\Dharmendra\Development\ARSM\PRSMBAL\MasterBAL.cs:line 126
+   at Master_Customer.btnSaveCustomer_Click(Object sender, EventArgs e) in d:\Dharmendra\Development\ARSM\PRSM\Master\Customer.aspx.cs:line 1001
+Time: 16-09-2022 14:35:41
+------------------Error Source: PRSMDAL ------------------
+Error Message: Index was outside the bounds of the array.
+Error StackTrace:    at PRSMDAL.MasterDAL.AddUpdateCustomer(Customer objCustomer) in D:\Dharmendra\Development\ARSM\PRSMDAL\MasterDAL.cs:line 425
+   at PRSMBAL.MasterBAL.AddUpdateCustomer(Customer ObjCompanyGroup) in D:\Dharmendra\Development\ARSM\PRSMBAL\MasterBAL.cs:line 126
+   at Master_Customer.btnSaveCustomer_Click(Object sender, EventArgs e) in d:\Dharmendra\Development\ARSM\PRSM\Master\Customer.aspx.cs:line 1002
+Time: 16-09-2022 15:13:18
