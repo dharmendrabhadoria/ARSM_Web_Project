@@ -43,9 +43,9 @@ public partial class InventoryReportSummary : PageBase
     {
         if (!IsPostBack)
         {
-            GetInventoryData();
+           // GetInventoryData();
             int CompanyId = 0;
-            BindCompanyGroup(CompanyId);
+           // BindCompanyGroup(CompanyId);
             lnkbtnInventorySummary.Style["color"] = "blue !important;";
             lnkbtnInventoryDeatils.Style["color"] = "#4f4f4f !important;";
                        
