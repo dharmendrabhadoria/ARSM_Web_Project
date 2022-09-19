@@ -96,6 +96,7 @@
                         <td>
                             <asp:Button ID="btnSearch" runat="server" Text="Search" ValidationGroup="SaveInWarddGroup"
                                 OnClick="btnSearch_Click" OnClientClick="return ReqInwardFieldsAll();" />
+                           
                         </td>
                     </tr>
                             <tr>
@@ -256,7 +257,11 @@
                             </tr>
                             <tr>
                                 <td colspan="4" class="bordnone">
+                                   
+                                    <%--<asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="return ValidateInwardfields();"   />
+                                  --%>
                                     <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="return ValidateInwardfields();"   />
+                                  
                                     <asp:Button ID="btnCancel" runat="server" Text="Clear" OnClientClick="return clearInwardfields();"
                                         OnClick="btnCancel_Click" />
                                 </td>

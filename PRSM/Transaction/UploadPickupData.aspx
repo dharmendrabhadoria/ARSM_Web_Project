@@ -85,8 +85,11 @@
                     </tr>
                     <tr>
                         <td colspan="4" class="bordnone">
-                            <asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" 
+                            <%--<asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" 
                                 OnClientClick=" return validateFileUpload();" 
+                                TabIndex="2" />--%>
+                            <asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" 
+                                
                                 TabIndex="2" />
                         </td>
                     </tr>
