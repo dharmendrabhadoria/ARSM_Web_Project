@@ -199,8 +199,9 @@ Inherits="Transaction_MakerAndChecker_New" %>
                     alert(ErrorMsg);
                     return false;
                 }
-                window.showModalDialog("AddNewBox.aspx?Mode=AddBox", window, "dialogHeight: 500px; dialogWidth: 1000px;Center:yes");
-                
+               // window.showModalDialog("AddNewBox.aspx?Mode=AddBox", window, "dialogHeight: 500px; dialogWidth: 1000px;Center:yes");
+                window.open("AddNewBox.aspx?Mode=AddBox", window, "dialogHeight: 500px; dialogWidth: 1000px;Center:yes");
+               
                 return true;
             }
 
@@ -224,7 +225,8 @@ Inherits="Transaction_MakerAndChecker_New" %>
                     alert(ErrorMsg);
                     return false;
                 }
-                window.showModalDialog("AddNewFile.aspx?Mode=AddFile", window, "dialogHeight: 650px; dialogWidth: 1100px;Center:yes");
+                //window.showModalDialog("AddNewFile.aspx?Mode=AddFile", window, "dialogHeight: 650px; dialogWidth: 1100px;Center:yes");
+                window.open("AddNewFile.aspx?Mode=AddFile", window, "dialogHeight: 650px; dialogWidth: 1100px;Center:yes");
                 return true;
             }
 
@@ -240,7 +242,7 @@ Inherits="Transaction_MakerAndChecker_New" %>
 
 //                return true;
 //            }
-                 </script>
+        </script>
 
     <%--<ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
     </ajax:ToolkitScriptManager>--%>

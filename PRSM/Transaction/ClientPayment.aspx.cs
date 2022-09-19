@@ -18,6 +18,7 @@ public partial class Transaction_ClientPayment : PageBase
     decimal? n_TransactionAmount;
     decimal? n_TDS;
     decimal? n_AmtReceived;
+ 
     protected void Page_Load(object sender, EventArgs e)
     {
         if (UserId == 0)

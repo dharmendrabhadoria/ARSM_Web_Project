@@ -30,7 +30,7 @@ public partial class Transaction_MakerAndChecker : PageBase
         }
         if (!IsPostBack)
         {
-            //NewInwardOutward();
+           // //NewInwardOutward();
             BindNewMaker();
             SetRolewiseAcessfuncationality();
         }
@@ -1594,9 +1594,9 @@ public partial class Transaction_MakerAndChecker : PageBase
         btnCancelApprove.Visible = false;
         btnModify.Visible = false;
         btnCancelModify.Visible = false;
-        lnkbtnChecker.Enabled = false;
-        lnkbtnMaker.Enabled = false;
-        lnkbtnModifyMaker.Enabled = false;
+        //lnkbtnChecker.Enabled = false;
+        //lnkbtnMaker.Enabled = false;
+        //lnkbtnModifyMaker.Enabled = false;
         if (dtPagefuncationality != null)
         {
             string PageFuncationality = string.Empty;
@@ -1995,7 +1995,7 @@ public partial class Transaction_MakerAndChecker : PageBase
     {
         ViewState["Action"] = "C";
         clearAllChecker();
-        BindChecker();
+       BindChecker();
 
         lblActivityNameChecker.Text = "Bar-coding & Data Entry (File & Box)";
         grdFilesDetailsChecker.Visible = false;
@@ -2095,7 +2095,7 @@ public partial class Transaction_MakerAndChecker : PageBase
         divNewMaker.Style["display"] = "none";
         divModifyMaker.Style["display"] = "block";
         divChecker.Style["display"] = "none";
-        GetNonApprovedWorkOrderNo("Reject",ddlWorkOrderModify);
+       GetNonApprovedWorkOrderNo("Reject",ddlWorkOrderModify);
         lnkbtnChecker.Style["color"] = "#4f4f4f !important;";
         lnkbtnMaker.Style["color"] = "#4f4f4f !important;";
         lnkbtnModifyMaker.Style["color"] = "blue !important;";
