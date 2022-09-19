@@ -47,9 +47,7 @@ public partial class Reports_FileRestoreRetrievalReport : PageBase
 
         lnkbtnFilePickUpdetails.Style["color"] = "#4f4f4f !important;";
         lnkbtnFilePickUp.Style["color"] = "blue !important;";
-        //gvClientwiseHeader.Style.Clear();
-        //gvClientwiseHeader.Style.Add("Style", "overflow: auto; padding-left: 0px; color: #4f4f4f; font-size: 12px; width: 90%;  line-height: 20px;display: none;");
-        ViewState["btnExpoert"] = false;
+       ViewState["btnExpoert"] = false;
         BindCompanyGroup(0);
         ddlCustomer.Items.Clear();
         ddlCustomer.Items.Insert(0, new ListItem { Text = "--Select--", Value = "0" });
@@ -58,26 +56,14 @@ public partial class Reports_FileRestoreRetrievalReport : PageBase
         ddlCompanyGroup.SelectedIndex = 0;
         divFilePickUpdetails.Style["display"] = "none";
         divFilePickUp.Style["display"] = "block";
-        //clearViewStateandGrids();
+       
         btnExportToExcel.Visible = false;
         SetRolewiseAcessfuncationality();
-        ////if (rdlstbtnReport.Items.Count > 0)
-        ////{
-        ////    rdlstbtnReport.Items[0].Selected = true;
-        ////}
-        //if (rdlstbtnReport.SelectedItem.Text == "Department-Wise")
-        //{
-        //    IsExist = 2;
-        //    ddlCompanyGroup.Enabled = true;
-        //    ddlCustomer.Enabled = true;
-        //    DepartmentWise();
-        //}
-        //else
-        //{
+       
             ddlCompanyGroup.Enabled = false;
             ddlCustomer.Enabled = false;
             BindClientWise();
-        //}
+       
 
     }
     protected void btnViewClear_Click(object sender, EventArgs e)

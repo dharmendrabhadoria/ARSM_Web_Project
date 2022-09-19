@@ -1122,7 +1122,8 @@ public partial class Reports_FilePickUpReport :PageBase
     public void SetRolewiseAcessfuncationality()
     {
         UserRolewiseAcess objUserRoleWiseAcessDAL = new UserRolewiseAcess();
-        DataTable dtPageId = objUserRoleWiseAcessDAL.GetApplicationCodeDetails("Page_Name", "Other Services Report").Tables[0];
+        //DataTable dtPageId = objUserRoleWiseAcessDAL.GetApplicationCodeDetails("Page_Name", "Other Services Report").Tables[0];
+        DataTable dtPageId = objUserRoleWiseAcessDAL.GetApplicationCodeDetails("Page_Name", "Other Services").Tables[0];
         int PageId = 0;
         if (dtPageId.Rows.Count > 0)
         {
