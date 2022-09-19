@@ -888,10 +888,18 @@ namespace PRSMDAL
 
         public string  GetContractEndDate(int pn_CustomerId)
         {
-
+            string strdate = "";
             SqlParameter[] param = new SqlParameter[1];
             param[0] = new SqlParameter("@pn_CustomerId", pn_CustomerId);
-            return (string)SqlHelper.ExecuteScalar(Conn, CommandType.StoredProcedure, uspCommonConstants.GETCONTRACTENDDATE, param);
+            DataSet ds = new DataSet();
+           ds = SqlHelper.ExecuteDataset(Conn, CommandType.StoredProcedure, uspCommonConstants.GETCONTRACTENDDATE, param);
+            if(ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                strdate= Convert.ToString(ds.Tables[0].Rows[0][0]);
+                strdate = strdate.Split(' ')[0];
+            }
+            //return (string)SqlHelper.ExecuteScalar(Conn, CommandType.StoredProcedure, uspCommonConstants.GETCONTRACTENDDATE, param);
+            return strdate;
             
         }
 
