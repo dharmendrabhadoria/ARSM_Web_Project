@@ -135,7 +135,7 @@
                                             OnClick="lnkbtngenerateinvoice_New_Click">  </asp:LinkButton>
                                     </li>
                                      <li>
-                                        <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Mangement"
+                                        <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Mangaement"
                                             OnClick="lnkbtnInhouseManagement_Click">  </asp:LinkButton>
                                     </li>
                                       <li>

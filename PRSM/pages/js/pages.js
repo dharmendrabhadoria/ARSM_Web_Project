@@ -12,8 +12,8 @@
 	 */
 	var Pages = function () {
 		this.VERSION = "4.1.0";
-		this.AUTHOR = "Revox";
-		this.SUPPORT = "support@revox.io";
+		this.AUTHOR = "Apaar";
+		this.SUPPORT = "info@apaar.com";
 
 		this.pageScrollElement = 'html, body';
 		this.$body = $('body');
