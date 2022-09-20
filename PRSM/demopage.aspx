@@ -239,70 +239,11 @@
             </ul>
           </li>
 		 
-         <li>
-		  
-            <a href="javascript:;"><span class="title">Reports</span>
-            <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-icon">calendar</i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <a href="calendar.html">Activity</a>
-                <span class="icon-thumbnail"><i class="pg-icon">c</i></span>
-              </li>
-              <li class="">
-                <a href="calendar_lang.html">Languages</a>
-                <span class="icon-thumbnail"><i class="pg-icon">l</i></span>
-              </li>
-              <li class="">
-                <a href="calendar_month.html">Box Location</a>
-                <span class="icon-thumbnail"><i class="pg-icon">m</i></span>
-              </li>
-              <li class="">
-                <a href="calendar_lazy.html">City</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-			   <li class="">
-                <a href="calendar_month.html">Company Master</a>
-                <span class="icon-thumbnail"><i class="pg-icon">m</i></span>
-              </li>
-              <li class="">
-                <a href="calendar_lazy.html">Company Group</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-<li class="">
-                <a href="calendar_lazy.html">Customer</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-			  <li class="">
-                <a href="calendar_lazy.html">Rate Card</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-			  <li class="">
-                <a href="calendar_lazy.html">Row Master</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-			  <li class="">
-                <a href="calendar_lazy.html">Company Group</a>
-                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
-            </ul>
-          </li>
-            </ul>
-          </li>
-          <li class="">
-            <a href="charts.html"><span class="title">Charts</span></a>
-            <span class="icon-thumbnail"><i class="pg-icon">chart</i></span>
-          </li>
+     
+        
          
         
-          <li class="">
-            <a href="https://docs.pages.revox.io/" rel="noreferrer" target="_blank"><span class="title">Docs</span></a>
-            <span class="icon-thumbnail"><i class="pg-icon">flag</i></span>
-          </li>
-          <li class="m-b-40">
-            <a href="http://changelog.pages.revox.io/" rel="noreferrer" target="_blank"><span class="title">Changelog</span></a>
-            <span class="icon-thumbnail"><i class="pg-icon">clipboard</i></span>
-          </li>
+         
         </ul>
         <div class="clearfix"></div>
       </div>
@@ -1903,12 +1844,10 @@
         <div class=" container-fluid  container-fixed-lg footer">
           <div class="copyright sm-text-center">
             <p class="small-text no-margin pull-left sm-pull-reset">
-              ©2014-2020 All Rights Reserved. Pages® and/or its subsidiaries or affiliates are registered trademark of Revox Ltd.
-              <span class="hint-text m-l-15">Pages v05.23 20201105.r.190</span>
+              ©2022 All Rights Reserved. Apaar Information Systems Pvt. Ltd.
+            
             </p>
-            <p class="small no-margin pull-right sm-pull-reset">
-              Hand-crafted <span class="hint-text">&amp; made with Love</span>
-            </p>
+          
             <div class="clearfix"></div>
           </div>
         </div>
