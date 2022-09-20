@@ -76,3 +76,17 @@ D:\Dharmendra\Development\ARSM\PRSMBAL\obj\Debug\PRSMBAL.csproj.CoreCompileInput
 D:\Dharmendra\Development\ARSM\PRSMBAL\obj\Debug\PRSMBAL.csproj.CopyComplete
 D:\Dharmendra\Development\ARSM\PRSMBAL\obj\Debug\PRSMBAL.dll
 D:\Dharmendra\Development\ARSM\PRSMBAL\obj\Debug\PRSMBAL.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\PRSMBAL.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\PRSMBAL.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\Entity.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\PRSMDAL.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\Utility.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\Entity.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\PRSMDAL.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\bin\Debug\Utility.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\obj\Debug\PRSMBAL.csproj.AssemblyReference.cache
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\obj\Debug\PRSMBAL.csproj.CoreCompileInputs.cache
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\obj\Debug\PRSMBAL.csproj.CopyComplete
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\obj\Debug\PRSMBAL.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMBAL\obj\Debug\PRSMBAL.pdb

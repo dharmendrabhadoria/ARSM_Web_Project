@@ -63,3 +63,15 @@ D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.CoreCompileInput
 D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.csproj.CopyComplete
 D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.dll
 D:\Dharmendra\Development\ARSM\PRSMDAL\obj\Debug\PRSMDAL.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\PRSMDAL.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\PRSMDAL.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\Entity.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\Utility.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\Entity.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\bin\Debug\Utility.pdb
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\obj\Debug\PRSMDAL.csproj.AssemblyReference.cache
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\obj\Debug\PRSMDAL.csproj.CoreCompileInputs.cache
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\obj\Debug\PRSMDAL.csproj.CopyComplete
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\obj\Debug\PRSMDAL.dll
+C:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSMDAL\obj\Debug\PRSMDAL.pdb
