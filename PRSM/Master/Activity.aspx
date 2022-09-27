@@ -102,7 +102,7 @@
 
 
                     <div style="float:right" runat="server" id="divShowFilter"   > Filter by Service Category : <asp:DropDownList runat="server"    
-                    ID="ddlfiltersearchbyCategory" AutoPostBack="True"   
+                    ID="ddlfiltersearchbyCategory" AutoPostBack="True"   CssClass="form-control"
                             onselectedindexchanged="ddlfiltersearchbyCategory_SelectedIndexChanged" CausesValidation="false" ValidationGroup="none" onchange="Page_BlockSubmit = false;"   >
             
             </asp:DropDownList> </div> <br /> <br />
