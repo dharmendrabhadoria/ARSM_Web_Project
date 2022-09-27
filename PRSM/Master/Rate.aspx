@@ -21,67 +21,72 @@
         return true;
         }
     </script>
-    
-    <div class="clear">
-    </div>
-    <div class="middle">
-        <div class="frmbxhead" style="width: 150px;">
-            Rate Card
+     
+       <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Rate Card</li>
+            </ol>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Rate Card</h3>
+                </div>
+
+            </div>
         </div>
-        <div class="frmbox">
-            <asp:UpdatePanel ID="updRateCard" runat="server">
+
+     <div class="row">
+              <div class="col-md-12">
+                <!-- START card -->
+                   <asp:UpdatePanel ID="updRateCard" runat="server">
                 <ContentTemplate>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td width="15%">
-                            </td>
-                            <td align="left" colspan="3" >
-                                <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="Brown"></asp:Label>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%">
-                                Company Group
-                            </td>
-                            <td colspan="3" >
-                                <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" Width="210" TabIndex="1"
+                     <asp:Label ID="lblMessage" runat="server" ></asp:Label>
+                  
+                            </ContentTemplate>
+            </asp:UpdatePanel>
+                <div class="card card-default">
+                  <div class="card-body">
+					 <div class="row">
+					 <div class="col-md-6">
+                      
+                         
+                         <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Rate Card</label>
+                              <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" TabIndex="1"  CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
                                 </asp:DropDownList><br />
                                 <span id="SpnddlCompanyGroup" style="color: Red;"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%">
-                                Customer
-                            </td>
-                            <td colspan="3" >
-                                <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" Width="210" TabIndex="2"
+                          
+                    </div>
+                    </div>
+                          <div class="col-md-6">
+                               <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Customer</label>
+                                    <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2" TabIndex="2"
                                     OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged">
                                 </asp:DropDownList><br />
                                 <span id="SpnddlCustomer" style="color: Red;"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td id="tdFdate" runat="server" width="15%" visible="false">
-                                From Date</td>
-                            <td>
-                           <asp:Label ID="lblFromDate" runat="server" Font-Bold="true" ></asp:Label>
+                                   </div>
+                    </div>
+                    </div>
 
-                            </td>
-                            <td id="tdEnddate" runat="server" visible="false">
-                                End Date</td>
-                            <td>
-                               <asp:Label ID="lblEndDate" runat="server" Font-Bold="true" ></asp:Label>
-                        
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="left" colspan="4">
-                                <div style="width: 100%; height: 295px; overflow: auto;">
-                                    <asp:GridView ID="grdRateCard" runat="server" AutoGenerateColumns="False" class="grid_data"
-                                        Width="100%" GridLines="None">
+                      <div class="row">
+                            <div class="col-md-1">  <div id="tdFdate" runat="server" visible="false">
+                                From Date:</div>
+                                </div>
+                          <div class="col-md-5">  <asp:Label ID="lblFromDate" runat="server" Font-Bold="true" ></asp:Label>
+                                </div>
+                          <div class="col-md-1"> <div id="tdEnddate" runat="server" visible="false">
+                                End Date:</div>
+                                </div>
+                          <div class="col-md-5">  <asp:Label ID="lblEndDate" runat="server" Font-Bold="true" ></asp:Label>
+                                </div>
+                          </div>
+
+                      <div class="row">
+
+                            <div class="col-md-12" style="height:300px; overflow:scroll;">
+                                    <asp:GridView ID="grdRateCard" runat="server" AutoGenerateColumns="False" CssClass="table table-hover table-condense" GridLines="None">
                                         <Columns>
                                             <asp:BoundField DataField="Sr No." HeaderText="Sr No." ReadOnly="True">
                                                 <ItemStyle Width="7%" />
@@ -113,19 +118,45 @@
                                         </Columns>
                                         <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                     </asp:GridView>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="bordnone">
-                                <asp:Button ID="btnSave" runat="server" TabIndex="3" Text="Save" ValidationGroup="ValRateCard1" OnClientClick="javascript:return validRateCardOnly();"
+                               </div>
+
+                           </div>
+
+                      <div class="row">
+                          <div class="col-md-12 m-t-15">
+                                <asp:Button ID="btnSave" type="button" class="btn btn-primary" runat="server" TabIndex="3" Text="Save" ValidationGroup="ValRateCard1" OnClientClick="javascript:return validRateCardOnly();"
                                     OnClick="btnSave_Click" />
-                                <asp:Button ID="btnCancel" runat="server" Text="Clear" TabIndex="4" OnClick="btnCancel_Click" OnClientClick="return ClearRateC();"   />
-                            </td>
-                        </tr>
-                    </table>
-                </ContentTemplate>
-            </asp:UpdatePanel>
-        </div>
-    </div>
+                                <asp:Button ID="btnCancel" runat="server" type="button" class="btn btn-primary" Text="Clear" TabIndex="4" OnClick="btnCancel_Click" OnClientClick="return ClearRateC();"   />
+                              </div>
+
+
+                      </div>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+         </div>
+   
+    
+       
+ 
+          
+                 
+                      
+                          
+                         
+
+                           
+                           
+                           
+                             
+                        
+                            
+                            
+                           
+              
+     
+   
 </asp:Content>
