@@ -211,7 +211,7 @@
 
 
                  <li class="">
-                <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Mangaement"
+                <asp:LinkButton ID="lnkbtnInhouseManagement" runat="server" Text="In House Management"
                                             OnClick="lnkbtnInhouseManagement_Click">  </asp:LinkButton>
                 <span class="icon-thumbnail"><i class="pg-icon">c</i></span>
               </li>
@@ -264,10 +264,10 @@
                 <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
               </li>
 
-                 <li class="">
+                 <%--<li class="">
                  <asp:LinkButton ID="lnkbtnCloseServiceRequest" runat="server" Text="Close Service Request" onclick="lnkbtnCloseServiceRequest_Click" >  </asp:LinkButton> 
                 <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
-              </li>
+              </li>--%>
 
                 
             </ul>
