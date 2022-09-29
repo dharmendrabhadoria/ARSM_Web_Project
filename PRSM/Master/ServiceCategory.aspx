@@ -33,10 +33,8 @@
 
      <div class="row">
               <div class="col-md-12">
-
-  <div class="card card-default">
+                <div class="card card-default">
                   <div class="card-body">
-
                            <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Visible="true" Font-Size="Medium"
                             ForeColor="Brown"></asp:Label>
 					 <div class="row">
@@ -46,7 +44,6 @@
                            <label class="">Name</label>
                                 <asp:TextBox ID="txtSCName" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                         
-
                                </div>
                          <asp:RequiredFieldValidator ID="ReqfldName" runat="server" ControlToValidate="txtSCName"
                             ErrorMessage="Please Enter Name." ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
