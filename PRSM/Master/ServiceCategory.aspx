@@ -17,73 +17,80 @@
             background-color: #797979;
         }
     </style>
-    <div class="clear">
-    </div>
-    <div class="middle">
-        <div class="frmbxhead" style="width: 150px;">
-            Service Category
+   
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Service Category</li>
+            </ol>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Service Category</h3>
+                </div>
+
+            </div>
         </div>
-        <div class="frmbox">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td>
-                    </td>
-                    <td align="left">
-                        <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Visible="true" Font-Size="Medium"
+
+     <div class="row">
+              <div class="col-md-12">
+
+  <div class="card card-default">
+                  <div class="card-body">
+
+                           <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Visible="true" Font-Size="Medium"
                             ForeColor="Brown"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="12%">
-                        Name
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtSCName" runat="server" Style="width: 200px;" MaxLength="50"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="ReqfldName" runat="server" ControlToValidate="txtSCName"
+					 <div class="row">
+                    
+					 <div class="col-md-6">
+                           <div class="form-group form-group-default">
+                           <label class="">Name</label>
+                                <asp:TextBox ID="txtSCName" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
+                        
+
+                               </div>
+                         <asp:RequiredFieldValidator ID="ReqfldName" runat="server" ControlToValidate="txtSCName"
                             ErrorMessage="Please Enter Name." ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
                         <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterType="UppercaseLetters,LowercaseLetters,Custom"
                             ValidChars="-'_.& " TargetControlID="txtSCName">
                         </ajax:FilteredTextBoxExtender>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="12%">
-                        Remark
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtRemark" runat="server" Style="width:200px;resize:none;" TextMode="MultiLine"
+                         </div>
+                          <div class="col-md-6">
+                               <div class="form-group form-group-default">
+                                    <label class="">Remark</label>
+                                   <asp:TextBox ID="txtRemark" runat="server"  CssClass="form-control"
                             onkeypress=" return textboxMultilineMaxNumber(this.id,200)" onkeyup=" return textboxMultilineMaxNumber(this.id,200) "></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="bordnone">
-                        <asp:Button ID="btnSave" runat="server" Text="Save" ValidationGroup="SaveGroup" OnClientClick="return  Validatefields();"
+
+                                   </div>
+                              </div>
+                    </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                               <asp:Button ID="btnSave" runat="server" type="button" class="btn btn-primary"  Text="Save" ValidationGroup="SaveGroup" OnClientClick="return  Validatefields();"
                             OnClick="btnSave_Click" />
-                        <asp:Button ID="btnCancel" runat="server" Text="Clear" OnClientClick="clearfields();return false;" />
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="left" colspan="2">
-                        <asp:GridView ID="gdvSearchCategory" runat="server" AutoGenerateColumns="False" Width="100%"
-                            CssClass="grid_data" GridLines="None" OnRowDataBound="gdvSearchCategory_RowDataBound"
+                        <asp:Button ID="btnCancel" runat="server" Text="Clear" type="button" class="btn btn-primary"  OnClientClick="clearfields();return false;" />
+                          </div>
+
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-md-12 m-t-20">
+                              <asp:GridView ID="gdvSearchCategory" runat="server" AutoGenerateColumns="False"  CssClass="table table-hover table-condense"
+                             GridLines="None" OnRowDataBound="gdvSearchCategory_RowDataBound"
                             AllowPaging="True" OnPageIndexChanging="gdvSearchCategory_PageIndexChanging"
                             PageSize="20">
                             <Columns>
-                                <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="7%">
+                                <asp:TemplateField HeaderText="Sr No.">
                                     <ItemTemplate>
                                         <asp:Label ID="lblSrNo" runat="server" Text='<%# Container.DataItemIndex +1  %>'></asp:Label>
                                     </ItemTemplate>
-                                    <ItemStyle Width="7%"></ItemStyle>
+                                    <ItemStyle></ItemStyle>
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="Name" ItemStyle-Width="35%">
+                                <asp:TemplateField HeaderText="Name" >
                                     <ItemTemplate>
                                         <asp:Label ID="lblName" runat="server" Text='<%#Eval("SCName") %>'></asp:Label>
                                     </ItemTemplate>
-                                    <ItemStyle Width="20%"></ItemStyle>
+                                    <ItemStyle></ItemStyle>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Remark">
                                     <ItemTemplate>
@@ -93,7 +100,7 @@
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="">
-                                    <ItemStyle Width="5%"></ItemStyle>
+                                    <ItemStyle></ItemStyle>
                                     <ItemTemplate>
                                         <asp:LinkButton ID="lnkbtnEdit" runat="server" Text="Edit" OnClientClick="javascript:Hide();"
                                             CommandArgument='<%# Eval("IsEdit") %>'></asp:LinkButton>
@@ -104,13 +111,22 @@
                             </Columns>
                             <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                         </asp:GridView>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="clear">
-        </div>
-        <br />
+                          </div>
+
+                      </div>
+
+                  </div>
+                    </div>
+                  </div>
+                    </div>
+   
+     
+      
+         
+                        
+                   
+        
+       
         <asp:HiddenField ID="hdneditid" runat="server" />
         <asp:HiddenField ID="hdnCategoryid" runat="server" />
         <div id="loading-div-background" style="display: none;">
@@ -121,5 +137,5 @@
                     Please wait....</h2>
             </div>
         </div>
-    </div>
+   
 </asp:Content>
