@@ -62,49 +62,46 @@
             </div>
         </ProgressTemplate>
     </asp:UpdateProgress>
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Customer User Creation</li>
+            </ol>
+            <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Customer User Creation</h3>
+                </div>
+            </div>
+                </div>
     <asp:UpdatePanel ID="updActivity" runat="server">
         <ContentTemplate>
-            <div class="clear">
-            </div>
-            <div class="frmbxhead">
-                Customer User Creation
-            </div>
-            <div class="frmbox">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                        <td colspan="2" align="center">
-                            <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="Brown"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Full Name
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtCustFullName" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RegFieldFname" runat="server" ForeColor="Red" ControlToValidate="txtCustFullName"
+            <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="Brown"></asp:Label>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+
+                      <div class="row">
+                           
+                          <div class="col-md-6">
+                              <div class="form-group form-group-default">
+                           <label class="">Full Name</label>
+                                  <asp:TextBox ID="txtCustFullName" runat="server" CssClass="form-control"></asp:TextBox>
+                            
+                                  </div>
+                              <asp:RequiredFieldValidator ID="RegFieldFname" runat="server" ForeColor="Red" ControlToValidate="txtCustFullName"
                                 SetFocusOnError="true" ErrorMessage="Customer name should not be blank." ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ForeColor="Red"
                                 ControlToValidate="txtCustFullName" ErrorMessage="Customer name should be alphabetic only."
                                 ValidationGroup="SaveGroup" Display="Dynamic" runat="server" ValidationExpression="^[a-zA-Z' ]+$" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Email ID
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtCustEmail" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" SetFocusOnError="true"
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group form-group-default">
+                           <label class="">WareHouse</label>
+                                  <asp:TextBox ID="txtCustEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                            
+                                  </div>
+                              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" SetFocusOnError="true"
                                 ForeColor="Red" ControlToValidate="txtCustEmail" ErrorMessage="Email ID should not be blank."
                                 Display="Dynamic" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" SetFocusOnError="true"
@@ -113,67 +110,53 @@
                                 Display="Dynamic"></asp:RegularExpressionValidator>
                             <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtCustEmail"
                                 FilterType=" Numbers,UppercaseLetters,LowercaseLetters,Custom" ValidChars=".,@,_" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Company Group
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Company Group</label>
+                                   <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" SetFocusOnError="true"
+                           
+                                  </div>
+                               <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" SetFocusOnError="true"
                                 ForeColor="Red" ControlToValidate="ddlCompanyGroup" ErrorMessage="Please Select Company Group."
                                 ValidationGroup="SaveGroup" Display="Dynamic" InitialValue="0"></asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Select Customer
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <%-- <asp:ListBox ID="lstCustomer" runat="server" SelectionMode="Single" Width="400px" 
-                        onselectedindexchanged="lstCustomer_SelectedIndexChanged">
-                    </asp:ListBox>--%>
-                            <asp:DropDownList ID="lstCustomer" runat="server" AutoPostBack="true" OnSelectedIndexChanged="lstCustomer_SelectedIndexChanged">
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Select Customer</label>
+                                   <asp:DropDownList ID="lstCustomer" runat="server" AutoPostBack="true" OnSelectedIndexChanged="lstCustomer_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                             </asp:DropDownList>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" SetFocusOnError="true"
                                 ForeColor="Red" ControlToValidate="lstCustomer" ErrorMessage="Please Select Customer."
                                 ValidationGroup="SaveGroup" Display="Dynamic" InitialValue="0"></asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            User Id
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtCustUserName" runat="server"></asp:TextBox>
-                            <ajax:FilteredTextBoxExtender ID="FilexttxtUserName" runat="server" TargetControlID="txtCustUserName"
+                                  </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-4">
+                                <div class="form-group form-group-default">
+                           <label class="">User Id</label>
+                                    <asp:TextBox ID="txtCustUserName" runat="server" CssClass="form-control"></asp:TextBox>
+                            
+                                    </div>
+                              <ajax:FilteredTextBoxExtender ID="FilexttxtUserName" runat="server" TargetControlID="txtCustUserName"
                                 FilterType=" Numbers,UppercaseLetters,LowercaseLetters,Custom" ValidChars="&,'," />
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCustUserName"
                                 ErrorMessage="User Id should not be blank." ValidationGroup="SaveGroup" ForeColor="Red"
                                 Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr id="trPwd" runat="server">
-                        <td>
-                            Password
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ForeColor="Red"
+                          </div>
+                          <div class="col-md-4">
+                                <div class="form-group form-group-default" id="trPwd" runat="server">
+                           <label class="">Full Name</label>
+                                    <asp:TextBox ID="txtPwd" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                           
+                                    </div>
+                               <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ForeColor="Red"
                                 ControlToValidate="txtPwd" SetFocusOnError="true" ErrorMessage="Password should not be blank."
                                 ValidationGroup="SaveGroup" Display="Dynamic"></asp:RequiredFieldValidator>
                             <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtPwd"
@@ -184,17 +167,13 @@
                                 ForeColor="Red" SetFocusOnError="True" 
                                 ValidationExpression="^[a-zA-Z0-9'@&#.\s]{4,12}$" 
                                 ValidationGroup="SaveGroup"></asp:RegularExpressionValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Confirm Password
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtConfirmPwd" runat="server" TextMode="Password"></asp:TextBox>
+                          </div>
+                          <div class="col-md-4">
+                                <div class="form-group form-group-default">
+                           <label class="">Full Name</label>
+                                     <asp:TextBox ID="txtConfirmPwd" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                             
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red"
                                 ControlToValidate="txtConfirmPwd" SetFocusOnError="true" ErrorMessage="Confirm Password should not be blank."
                                 ValidationGroup="SaveGroup" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -202,54 +181,60 @@
                                 ErrorMessage="Password Do Not Match." ControlToCompare="txtPwd" 
                                 ControlToValidate="txtConfirmPwd" Display="Dynamic" ForeColor="Red" 
                                 SetFocusOnError="True" ValidationGroup="SaveGroup"></asp:CompareValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            IsActive
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:CheckBox ID="chkActive" runat="server" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Is User Locked
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:CheckBox ID="chkLocked" runat="server" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Account Active Date (180Days)
-                        </td>
-                        <td>
-                            :
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtAciveDate" runat="server" CssClass="datepicker1" onkeypress="return false;"></asp:TextBox>
-                            &nbsp;&nbsp;&nbsp;Contract Date :
-                            <asp:Label ID="lblcontractDate" runat="server"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" ValidationGroup="SaveGroup"
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-3">
+                              IsActive:
+                              <asp:CheckBox ID="chkActive" runat="server" />
+                          </div>
+                          <div class="col-md-3">
+                              Is User Locked: <asp:CheckBox ID="chkLocked" runat="server" />
+                          </div>
+                          <div class="col-md-3">
+                               <div class="form-group form-group-default">
+                           <label class="">Account Active Date (180Days):</label>
+                              
+                              <asp:TextBox ID="txtAciveDate" runat="server" CssClass="datepicker1 form-control" onkeypress="return false;" ></asp:TextBox>
+                         
+                          </div>
+                              </div>
+                          <div class="col-md-3">
+                              Contract Date:                            <asp:Label ID="lblcontractDate" runat="server"></asp:Label>
+                          </div>
+                      </div>
+
+                    
+
+                      
+                        <div class="row">
+                          <div class="col-md-12">
+                              <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" ValidationGroup="SaveGroup"  type="button" class="btn btn-primary"
                                 OnClientClick="return  Validatefields();" />
-                            <asp:Button ID="btnReset" runat="server" Text="Clear" OnClick="btnReset_Click" OnClientClick="clearfields();" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="gridcover">
-                            <asp:GridView ID="gvUserMaster" runat="server" AutoGenerateColumns="False" AllowPaging="true"
-                                PageSize="20" Width="100%" border="0" CssClass="grid_data" GridLines="None" OnRowCommand="gvUserMaster_RowCommand"
+                            <asp:Button ID="btnReset" runat="server" Text="Clear" OnClick="btnReset_Click" OnClientClick="clearfields();"  type="button" class="btn btn-primary"/>
+                          </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+
+
+        
+                    
+                  
+                            <%-- <asp:ListBox ID="lstCustomer" runat="server" SelectionMode="Single" Width="400px" 
+                        onselectedindexchanged="lstCustomer_SelectedIndexChanged">
+                    </asp:ListBox>--%>
+                    
+                    
+                   
+                  
+                            <asp:GridView ID="gvUserMaster" runat="server" AutoGenerateColumns="False" AllowPaging="true" 
+                                PageSize="20" Width="100%" border="0" CssClass="table table-hover table-condense" GridLines="None" OnRowCommand="gvUserMaster_RowCommand"
                                 OnPageIndexChanging="gvUserMaster_PageIndexChanging">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="7%">
@@ -287,10 +272,8 @@
                             <%-- <asp:HiddenField ID="hdnFN" runat="server" />
                           <asp:HiddenField ID="hdnCompanygrp" runat="server" />
                           <asp:HiddenField ID="hdnCustomerID" runat="server" />--%>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                       
+           
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>
