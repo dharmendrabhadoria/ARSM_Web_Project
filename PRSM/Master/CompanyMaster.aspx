@@ -45,7 +45,7 @@
                           <div class="col-md-6">
                               <div class="form-group form-group-default form-group-default-select2">
                            <label class="">Industry</label>
-                                   <asp:DropDownList ID="ddlindustry" runat="server" TabIndex="2"  CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"> </asp:DropDownList>
+                                   <asp:DropDownList ID="ddlindustry" runat="server" TabIndex="2" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"> </asp:DropDownList>
                                     </div>
                               <asp:RequiredFieldValidator ID="reqserviceCategory" runat="server" ErrorMessage="Please Select Industry."
                                     InitialValue="0" ControlToValidate="ddlindustry" ForeColor="Red" ValidationGroup="SaveGroup1"></asp:RequiredFieldValidator>

@@ -47,77 +47,100 @@
     </script>
     <%--        <asp:UpdatePanel ID="updUploadPickup" runat="server">
             <ContentTemplate><div class="middle">--%>
+
+
+
+
+
+     <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Upload Pickup Data</li>
+            </ol>
+            <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Upload Pickup Data</h3>
+                </div>
+            </div>
+                </div>
     <div class="frmbxhead" style="width: 150px; z-index: 100px;">
         <a id="lnkUploadPickupdata" style="text-decoration: none; color: #4f4f4f !important;">
             Upload Pickup Data</a>
     </div>
-    <div id="divUploadPickUpData">
-        <div class="frmbox">
+
+      <div id="divUploadPickUpData">
+        
             <div id="ContentPlaceHolder1_divInward" style="display: block;">
-                <table width="100%">
-                    <tr>
-                        <td style="width: 14%">
-                            Fresh Pickup Work Order
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWorkorderNumber" runat="server" Width="200px" OnSelectedIndexChanged="ddlWorkorderNumber_SelectedIndexChanged">
+    <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+                      <div class="row">
+                           <div class="col-md-4">
+                                <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Fresh Pickup Work Order</label>
+                                    <asp:DropDownList ID="ddlWorkorderNumber" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"  runat="server" OnSelectedIndexChanged="ddlWorkorderNumber_SelectedIndexChanged">
                             </asp:DropDownList>
+                                    </div>
+                               </div>
+                           <div class="col-md-4">
+                                <div class="form-group form-group-default">
+                           <label class="">Excel File</label>
+                               <asp:FileUpload ID="FileUpload_Pickup" runat="server" onchange=" return validateFileUpload();" TabIndex="1" />
+                            <asp:Label ID="lblValidationMessage" runat="server" ForeColor="Red"></asp:Label>
+                                    </div>
+                               </div>
+                          <div class="col-md-4">
+                              <asp:HyperLink ID="hyExcelsheet" runat="server" NavigateUrl="~/ExcelSheetFormats/Pickup_Format.xlsx" class="btn btn-primary">Download Standard Format Excel File</asp:HyperLink>
+                         <br /><asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" class="btn btn-primary m-t-5"
+                                
+                                TabIndex="2" />
+                              </div>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+        </div>
+
+
+
+
+    
+  
+                
+                  
+                            
                             <%-- <asp:Label ID="lblWorkOrder" runat="server"> </asp:Label>--%>
                             <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlWorkorderNumber"
                                 ErrorMessage="Please select Workorder Number." InitialValue="0" ForeColor="Red"
                                 ValidationGroup="SavePickupData" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>--%>
-                        </td>
-                        <td>
+                       
                             <%--<asp:Button ID="btnCreateExcel" runat="server" Text="Download Standred Format Excel File"
                                 OnClick="btnCreateExcel_Click" />--%>
-                            <asp:HyperLink ID="hyExcelsheet" runat="server" NavigateUrl="~/ExcelSheetFormats/Pickup_Format.xlsx">Download Standard Format Excel File</asp:HyperLink>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="15%">
-                            Excel File
-                        </td>
-                        <td>
-                            <asp:FileUpload ID="FileUpload_Pickup" runat="server" 
-                                onchange=" return validateFileUpload();" TabIndex="1" />
-                            <asp:Label ID="lblValidationMessage" runat="server" ForeColor="Red"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="bordnone">
+                            
+                   
+                   
+                    
                             <%--<asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" 
                                 OnClientClick=" return validateFileUpload();" 
                                 TabIndex="2" />--%>
-                            <asp:Button ID="btnUpload" Text="Upload" OnClick="Upload" runat="server" 
-                                
-                                TabIndex="2" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
+                            
+                       
+                   
                             <asp:Label ID="lblAddDepartmentMessage" runat="server" ForeColor="Red"></asp:Label><br />
-                            <asp:Button ID="btnAddDepartments" runat="server" OnClick="btnAddDepartments_Click"
+                            <asp:Button ID="btnAddDepartments" runat="server" OnClick="btnAddDepartments_Click" class="btn btn-primary"
                                 Text="Add Departments" Visible="False" TabIndex="3" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <asp:GridView Width="400px" ID="grdError" runat="server" AutoGenerateColumns="true"
-                                CssClass="ExcelTable2007-1">
+                        
+                            <asp:GridView Width="400px" ID="grdError" runat="server" AutoGenerateColumns="true"  CssClass="table table-hover table-condense" >
+
                             </asp:GridView>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
+                            <%--CssClass="ExcelTable2007-1"--%>
+                       
+                   
+                
             </div>
-        </div>
+        
     </div>
     <%-- </div>--%>
     <%--</ContentTemplate>
