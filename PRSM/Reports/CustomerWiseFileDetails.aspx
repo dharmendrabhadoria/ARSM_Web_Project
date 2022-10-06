@@ -145,47 +145,77 @@
                 Sys.Application.add_load(BindDates);
                 Sys.Application.add_load(SelectAllCheckboxesA);
             </script>
-            <div class="middle">
-                <div class="frmbxhead" style="width: 170px; left: 100px;">
-                    Customer Wise File Details
+
+
+              <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Customer Wise File Details</li>
+            </ol>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Customer Wise File Details</h3>
                 </div>
-                <div class="frmbox">
-                    <table width="100%" border="0">
-                        <tr>
-                            <td width="100px">
-                                Customer
-                            </td>
-                            <td width="200px">
-                                <asp:DropDownList ID="ddlCustomer" runat="server" Width="300px" OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged"
+
+            </div>
+        </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+                       <div class="row">
+                           <div class="col-md-4">
+                                <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Customer</label>
+                                    <asp:DropDownList ID="ddlCustomer" runat="server"  OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     AutoPostBack="true">
                                 </asp:DropDownList>
-                                <br />
+                                    </div>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlCustomer"
                                     ErrorMessage="Please Select Customer." InitialValue="0" ForeColor="Red" ValidationGroup="viewGroup"></asp:RequiredFieldValidator>
-                            </td>
-                            <td width="50px">
-                                Year
-                            </td>
-                            <td width="100px">
-                                <asp:DropDownList ID="ddlYear" runat="server" Width="100" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged"
+                               </div>
+                           <div class="col-md-4">
+                               <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Year</label>
+                                   <asp:DropDownList ID="ddlYear" runat="server"  OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     AutoPostBack="true">
                                 </asp:DropDownList>
-                                <br />
+                                    </div>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlYear"
                                     ErrorMessage="Please Select Year." InitialValue="0" ForeColor="Red" ValidationGroup="viewGroup"></asp:RequiredFieldValidator>
-                            </td>
-                            <td width="50px">
-                                Month
-                            </td>
-                            <td width="100px">
-                                <asp:DropDownList ID="ddlMonth" runat="server" Width="100" OnSelectedIndexChanged="ddlMonth_SelectedIndexChanged"
+                               </div>
+                           <div class="col-md-4">
+                               <div class="form-group form-group-default form-group-default-select2" >
+                           <label class="">Month</label>
+                                      <asp:DropDownList ID="ddlMonth" runat="server"  OnSelectedIndexChanged="ddlMonth_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     AutoPostBack="true">
                                 </asp:DropDownList>
-                                <br />
+
+                                    </div>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlMonth"
                                     ErrorMessage="Please Select Month." InitialValue="0" ForeColor="Red" ValidationGroup="viewGroup"></asp:RequiredFieldValidator>
-                            </td>
-                        </tr>
+                               </div>
+                           </div>
+
+
+                      <div class="row">
+                          <div class="col-md-12">
+                               <asp:Button ID="btnView" runat="server" Text="View" OnClick="btnView_Click" ValidationGroup="viewGroup" type="button" class="btn btn-primary"/>
+                                <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" type="button" class="btn btn-primary"/>
+                          </div>
+                      </div>
+
+                </div>
+                    </div>
+                  </div>
+                </div>
+
+
+           
+               
+                    <table width="100%" border="0">
+                       
                         <asp:Panel runat="server" ID="pnlWoNo" BorderWidth="0px" Visible="false">
                             <tr>
                                 <br />
@@ -218,8 +248,7 @@
                             <td>
                             </td>
                             <td>
-                                <asp:Button ID="btnView" runat="server" Text="View" OnClick="btnView_Click" ValidationGroup="viewGroup" />
-                                <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" />
+                               
                             </td>
                             <td>
                                 <asp:Panel runat="server" ID="pnlReportType" Visible="false">
@@ -257,9 +286,7 @@
                             <td>
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="6">
-                                <div>
+                        
                                     <asp:GridView runat="server" ID="gvClientWiseFileDetails" AutoGenerateColumns="false"
                                         CssClass="grid_data" Width="100%" ShowHeader="true" ShowFooter="true" AllowPaging="true"
                                         PageSize="10" OnPageIndexChanging="gvClientWiseFileDetails_PageIndexChanging">
@@ -281,12 +308,9 @@
                                             <asp:BoundField HeaderText="PickUp Address" ItemStyle-Width="20%" DataField="PickUp Address" />
                                         </Columns>
                                     </asp:GridView>
-                                </div>
-                            </td>
-                        </tr>
+                                
                     </table>
-                </div>
-            </div>
+       
         </ContentTemplate>
         <Triggers>
             <asp:PostBackTrigger ControlID="btnExportToExcel" />

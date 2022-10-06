@@ -175,26 +175,50 @@
 }
 .tabltdfix td{width:180px !important;}
 </style>
-    <div class="frmbxhead">
-        Assign User Page Access Rights
-    </div>
-    <div class="frmbox">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td style="width: 10%">
-                    Role
-                </td>
-                <td>
-                    <asp:DropDownList ID="ddlRole" runat="server" Width="160" AutoPostBack="True" 
+
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Assign User Page Access Rights</li>
+            </ol>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Assign User Page Access Rights</h3>
+                </div>
+
+            </div>
+        </div>
+
+      <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+                      <div class="row">
+                           <div class="col-md-12">
+                                  <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Role</label>
+                                       <asp:DropDownList ID="ddlRole" runat="server" AutoPostBack="True"   CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                         onselectedindexchanged="ddlRole_SelectedIndexChanged"  >
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="reqddlddlRole" runat="server"  SetFocusOnError="true" ControlToValidate="ddlRole" ErrorMessage="Please Select Role."  Display="Dynamic" ValidationGroup="Save" InitialValue="0"    ></asp:RequiredFieldValidator>  
-                </td>
-            </tr>
-             <tr>
-    <td colspan="2" style="empty-cells:hide;" class="nonebor">
+
+                                      </div>
+                                <asp:RequiredFieldValidator ID="reqddlddlRole" runat="server"  SetFocusOnError="true" ControlToValidate="ddlRole" ErrorMessage="Please Select Role."  Display="Dynamic" ValidationGroup="Save" InitialValue="0"    ></asp:RequiredFieldValidator>  
+                               </div>
+
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+
+
+    
+   
+       
         <asp:GridView ID="grdPageaccess" runat="server" AutoGenerateColumns="false" 
-            Width="100%" onrowdatabound="grdPageaccess_RowDataBound" CssClass="comgrid1"   GridLines="None" BorderWidth="0"     >
+            Width="100%" onrowdatabound="grdPageaccess_RowDataBound" CssClass="table table-hover table-condense"   GridLines="None" BorderWidth="0"     >
             <Columns>
             <asp:TemplateField HeaderText="Page Name" ItemStyle-Width="170"  >
            <ItemTemplate>
@@ -237,15 +261,9 @@
             </Columns>
               <HeaderStyle  HorizontalAlign="Left" BorderWidth="0"    />
         </asp:GridView>
-    </td>
-    </tr>
-    <tr>
-    <td></td>
-    <td align="left"  style="padding-left:150px;"   >
+   
         <asp:Button ID="btnSave" runat="server" Text="Save"  OnClientClick="return IsAnyChecked();"
             onclick="btnSave_Click" ValidationGroup="Save"  />
-    </td>
-    </tr>
-        </table>
-    </div>
+   
+   
 </asp:Content>

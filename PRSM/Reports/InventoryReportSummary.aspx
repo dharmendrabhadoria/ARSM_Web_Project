@@ -134,6 +134,11 @@
             <script type="text/javascript">
                 Sys.Application.add_load(BindDates);
             </script>
+
+
+
+
+
             <div class="middle">
                 <div class="frmbxhead" style="z-index: 0 !important; width: 200px;">
                     <asp:LinkButton ID="lnkbtnInventorySummary" runat="server" Font-Underline="false"
