@@ -15,55 +15,96 @@
     <script type="text/javascript">
         Sys.Application.add_load(BindGrdChkUchkEvents);
     </script>
-    <div class="clear">
-    </div>
-    <div class="middle">
-        <div class="frmbxhead" style="width: 150px;">
-            <asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
-                CausesValidation="false"> Permanent Return</asp:LinkButton>
-        </div>
-        <asp:UpdatePanel ID="updpnlInward" runat="server">
+ 
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Permanent Return</li>
+            </ol>
+            <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Permanent Return</h3>
+                </div>
+            </div>
+                </div>
+       <asp:UpdatePanel ID="updpnlInward" runat="server">
             <ContentTemplate>
-                <div class="frmbox">
-                    <div id="divInward" runat="server">
-                        <table width="100%">
-                   <tr>
-                        <td style="width: 14%">
-                            WareHouse
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWareHouse" runat="server" Width="200">
-                            </asp:DropDownList><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
+
+
+ </ContentTemplate>
+        </asp:UpdatePanel>
+    <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+                      <div id="divInward" runat="server">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">WareHouse</label>
+                                  <asp:DropDownList ID="ddlWareHouse" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
+                            </asp:DropDownList>
+                           
+                                  </div>
+                               <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
                                 ErrorMessage="Please Select WareHose." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic" ></asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="15%">
-                            Company Group
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" Width="210"
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Company Group</label>
+                                  <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                 OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
                             </asp:DropDownList>
-                            <br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCompanyGroup" Display="Dynamic"  
+                           
+                                  </div>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCompanyGroup" Display="Dynamic"  
                                 ErrorMessage="Please Select Company Group ." InitialValue="0" ForeColor="Red"
                                 ValidationGroup="SaveInWarddGroup"   ></asp:RequiredFieldValidator>
                             <span id="SpnddlCompanyGroup" style="color: Red;"></span>
-                        </td>
-                        <td>
-                            Customer
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" Width="210"
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Customer</label>
+                                  <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                 OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged">
                             </asp:DropDownList><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlCustomer"
+                           
+                                  </div>
+                               <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlCustomer"
                                 ErrorMessage="Please Select Customer ." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic"  ></asp:RequiredFieldValidator>
                             <span id="SpnddlCustomer" style="color: Red;"></span>
-                        </td>
-                    </tr>
+                          </div>
+
+
+                          </div>
+                          </div>
+                      <div class="row">
+                          <div class="col-md-6">
+
+                          </div>
+                          <div class="col-md-6">
+
+                          </div>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+        </div>
+
+
+
+
+    <div class="middle">
+        
+            <asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
+                CausesValidation="false"> Permanent Return</asp:LinkButton>
+        
+     
+                <div class="frmbox">
+                    
+                        <table width="100%">
+                  
                     <tr>
                         <td width="12%">
                             Work Order
@@ -109,8 +150,8 @@
                                                     <td colspan="9">
                                                  <asp:Panel ID="pnlgvBx" runat="server" ScrollBars="Both" BorderStyle="Solid" BorderWidth="1px"
                                                             Height="300px">
-                                                         <asp:GridView runat="server" ID="grdBoxDetails" CellSpacing="1" CellPadding="1" AutoGenerateColumns="false"
-                                                                CssClass="ExcelTable2007-1 myTable scrollableFixedHeaderTable" Width="100%" HeaderStyle-CssClass="header">
+                                                         <asp:GridView runat="server"  ID="grdBoxDetails" CellSpacing="1" CellPadding="1" AutoGenerateColumns="false"
+                                                               CssClass="table table-hover table-condense" Width="100%" HeaderStyle-CssClass="header">
                                                                 <Columns>
                                                                     <asp:TemplateField ItemStyle-Width="2%" ItemStyle-Height="7px" HeaderStyle-Width="13%"
                                                                         HeaderText="Sr No.">
@@ -166,7 +207,7 @@
                                                         <asp:Panel ID="PanelgvFile" runat="server" ScrollBars="Both" BorderStyle="Solid"
                                                             Height="300px">
                                             <asp:GridView runat="server" ID="grdFilesDetails" CellSpacing="1" CellPadding="1"
-                                                                AutoGenerateColumns="false" CssClass="ExcelTable2007-1 myTable scrollableFixedHeaderTable"
+                                                                AutoGenerateColumns="false" CssClass="table table-hover table-condense"
                                                                 Width="100%" HeaderStyle-CssClass="header">
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="6%">
@@ -267,10 +308,9 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
+                   
                 </div>
-            </ContentTemplate>
-        </asp:UpdatePanel>
+           
         <script type="text/javascript">
             Sys.Application.add_load(function () { $('#ContentPlaceHolder1_grdBoxDetails').scrollableFixedHeaderTable(1000, 200); });
         </script>
