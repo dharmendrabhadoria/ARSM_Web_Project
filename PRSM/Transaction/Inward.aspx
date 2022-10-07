@@ -43,98 +43,97 @@
          <script type="text/javascript">
             Sys.Application.add_load(BindGrdChkUchkEvents);
          </script>
-    <div class="clear">
-    </div>
-    <div class="middle">
-        <div class="frmbxhead" style="width: 150px;z-index:100px;" >
-            <asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
-                CausesValidation="false"> Inward/Outward</asp:LinkButton>
+  
+
+
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Inward/Outward</li>
+            </ol>
+        <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10"><asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
+                CausesValidation="false"> Inward/Outward</asp:LinkButton></h3>
+                </div>
+
+            </div>
         </div>
+  
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">WareHouse</label>
+                <asp:DropDownList ID="ddlWareHouse" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">   </asp:DropDownList>
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
+                                ErrorMessage="Please Select WareHose." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic" ></asp:RequiredFieldValidator>
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Company Group</label>
+                <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
+                            </asp:DropDownList>
+                          
+                </div>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCompanyGroup" Display="Dynamic"  
+                                ErrorMessage="Please Select Company Group ." InitialValue="0" ForeColor="Red"
+                                ValidationGroup="SaveInWarddGroup"   ></asp:RequiredFieldValidator>
+                            <span id="SpnddlCompanyGroup" style="color: Red;"></span>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Customer</label>
+                <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            
+                </div>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlCustomer"
+                                ErrorMessage="Please Select Customer ." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic"  ></asp:RequiredFieldValidator>
+                            <span id="SpnddlCustomer" style="color: Red;"></span>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Work Order</label>
+                 <asp:DropDownList ID="ddlWorkOrder" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                OnSelectedIndexChanged="ddlWorkOrder_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            
+                </div>
+            <span id="Span1" style="color: Red;"></span>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Work Order Activity</label>
+                 <asp:DropDownList ID="ddlWorkOrderActivity" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
+                            </asp:DropDownList>
+                </div>
+            <span id="Span2" style="color: Red;"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+             <asp:Button ID="btnSearch" runat="server" Text="Search" ValidationGroup="SaveInWarddGroup" type="button" CssClass="btn btn-primary"
+                                OnClick="btnSearch_Click" OnClientClick="return ReqInwardFieldsAll();" />
+        </div>
+    </div>
+
+
         <asp:UpdatePanel ID="updpnlInward" runat="server">
         <ContentTemplate>
           <div class="frmbox">
             <div id="divInward" runat="server">
-                <table width="100%">
-                    <tr>
-                        <td style="width: 14%">
-                            WareHouse
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWareHouse" runat="server" Width="200">
-                            </asp:DropDownList><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
-                                ErrorMessage="Please Select WareHose." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic" ></asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="15%">
-                            Company Group
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" Width="210"
-                                OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
-                            </asp:DropDownList>
-                            <br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCompanyGroup" Display="Dynamic"  
-                                ErrorMessage="Please Select Company Group ." InitialValue="0" ForeColor="Red"
-                                ValidationGroup="SaveInWarddGroup"   ></asp:RequiredFieldValidator>
-                            <span id="SpnddlCompanyGroup" style="color: Red;"></span>
-                        </td>
-                        <td>
-                            Customer
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" Width="210"
-                                OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged">
-                            </asp:DropDownList><br />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlCustomer"
-                                ErrorMessage="Please Select Customer ." InitialValue="0" ForeColor="Red" ValidationGroup="SaveInWarddGroup" Display="Dynamic"  ></asp:RequiredFieldValidator>
-                            <span id="SpnddlCustomer" style="color: Red;"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="12%">
-                            Work Order
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWorkOrder" runat="server" AutoPostBack="true" Width="210"
-                                OnSelectedIndexChanged="ddlWorkOrder_SelectedIndexChanged">
-                            </asp:DropDownList>
-                            <span id="Span1" style="color: Red;"></span>
-                        </td>
-                        <td>
-                            Work Order Activity
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWorkOrderActivity" runat="server" AutoPostBack="true" Width="210">
-                            </asp:DropDownList>
-                            <span id="Span2" style="color: Red;"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td align="left">
-
-                        </td>
-                        <td >
-
-                        </td>
-
-                        <td >
-                            <asp:Button ID="btnSearch" runat="server" Text="Search" ValidationGroup="SaveInWarddGroup"
-                                OnClick="btnSearch_Click" OnClientClick="return ReqInwardFieldsAll();" />
-                        </td>
-                    </tr>
-          
-                    <tr>
-                        <td colspan="4" width="100%">
+               
                             <div runat="server" id="divInwardBoxes" style="display:none;">
                                 <fieldset class="fieldSetBorder">
                                     <legend> <b>Box Details </b></legend>
-                                    <table width="100%">
-                                        <tr>
-                              <td colspan="9">
+                                   
                                        <asp:Panel ID="pnlgvBx" runat="server"  style="height:190px; overflow: auto;" >
                                            <asp:GridView runat="server" ID="grdBoxDetails" CellSpacing="1" CellPadding="1"  AutoGenerateColumns="false" 
                                                        CssClass="ExcelTable2007-1 myTable scrollableFixedHeaderTable" width="100%"  HeaderStyle-CssClass="header" >
@@ -176,17 +175,13 @@
                                                     <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                                 </asp:GridView>
                                       </asp:Panel>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                           
                                 </fieldset>
                             </div>
                             <div runat="server" id="divInwardFiles" style="display:none;">
                                 <fieldset class="fieldSetBorder">
                                     <legend>File Details </legend>
-                                    <table width="100%">
-                                        <tr>
-                                    <td colspan="7" width="80%">
+                                   
              <asp:Panel ID="PanelgvFile" runat="server"   style="height:190px; overflow: auto;"   >
                         <asp:GridView runat="server" ID="grdFilesDetails" CellSpacing="1" CellPadding="1"
                                                                 AutoGenerateColumns="false" CssClass="ExcelTable2007-1 myTable scrollableFixedHeaderTable"
@@ -271,21 +266,14 @@
                                                                 <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                                             </asp:GridView>
                                   </asp:Panel>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                           
                                 </fieldset>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="bordnone">
-                           <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click"   OnClientClick="return ValidateInwardfields();"       />
-                           <asp:Button ID="btnCancel" runat="server" Text="Clear" 
+                       
+                           <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click"  type="button" CssClass="btn btn-primary"  OnClientClick="return ValidateInwardfields();"       />
+                           <asp:Button ID="btnCancel" runat="server" Text="Clear"  type="button" CssClass="btn btn-primary"
                                OnClientClick="return clearInwardfields();" onclick="btnCancel_Click"  />
-                        </td>
-                    </tr>
-                </table>
+                       
             </div>
         </div>
 
@@ -310,5 +298,5 @@
                Sys.Application.add_load(BindGrdChkUchkEvents);
          </script>
 
-    </div>
+    
 </asp:Content>

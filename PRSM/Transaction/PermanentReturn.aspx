@@ -23,7 +23,8 @@
             <div class="row">
         <div class="col-md-12 col-lg-12">
              <div class="b-b b-grey m-b-20">
-                  <h3 class="m-b-10">Permanent Return</h3>
+                  <h3 class="m-b-10"><asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
+                CausesValidation="false"> Permanent Return</asp:LinkButton></h3>
                 </div>
             </div>
                 </div>
@@ -80,12 +81,35 @@
                           </div>
                       <div class="row">
                           <div class="col-md-6">
-
+                                 <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Work Order</label>
+                                      <asp:DropDownList ID="ddlWorkOrder" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                OnSelectedIndexChanged="ddlWorkOrder_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            
+                                     </div>
+                              <span id="Span1" style="color: Red;"></span>
                           </div>
                           <div class="col-md-6">
+                                 <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Work Order Activity</label>
+                                     <asp:DropDownList ID="ddlWorkOrderActivity" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
+                            </asp:DropDownList>
+                            
+                                     </div>
+                              <span id="Span2" style="color: Red;"></span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <asp:Button ID="btnSearch" runat="server" Text="Search" ValidationGroup="SaveInWarddGroup" type="button" CssClass="btn btn-primary"
+                                OnClick="btnSearch_Click" OnClientClick="return ReqInwardFieldsAll();" />
 
                           </div>
                       </div>
+
+
+
 
                       </div>
                     </div>
@@ -97,57 +121,16 @@
 
     <div class="middle">
         
-            <asp:LinkButton ID="lnkbtnInward" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
-                CausesValidation="false"> Permanent Return</asp:LinkButton>
+            
         
      
                 <div class="frmbox">
                     
-                        <table width="100%">
-                  
-                    <tr>
-                        <td width="12%">
-                            Work Order
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWorkOrder" runat="server" AutoPostBack="true" Width="210"
-                                OnSelectedIndexChanged="ddlWorkOrder_SelectedIndexChanged">
-                            </asp:DropDownList>
-                            <span id="Span1" style="color: Red;"></span>
-                        </td>
-                        <td>
-                            Work Order Activity
-                        </td>
-                        <td>
-                            <asp:DropDownList ID="ddlWorkOrderActivity" runat="server" AutoPostBack="true" Width="210">
-                            </asp:DropDownList>
-                            <span id="Span2" style="color: Red;"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td align="left">
-
-                        </td>
-                        <td >
-                    
-                        </td>
-
-                        <td>
-                            <asp:Button ID="btnSearch" runat="server" Text="Search" ValidationGroup="SaveInWarddGroup"
-                                OnClick="btnSearch_Click" OnClientClick="return ReqInwardFieldsAll();" />
-                           
-                        </td>
-                    </tr>
-                            <tr>
-                                <td colspan="4" width="100%">
+                        
                                     <div runat="server" id="divInwardBoxes" style="display: none;">
                                         <fieldset class="fieldSetBorder">
                                             <legend>Box Details</legend>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td colspan="9">
+                                            
                                                  <asp:Panel ID="pnlgvBx" runat="server" ScrollBars="Both" BorderStyle="Solid" BorderWidth="1px"
                                                             Height="300px">
                                                          <asp:GridView runat="server"  ID="grdBoxDetails" CellSpacing="1" CellPadding="1" AutoGenerateColumns="false"
@@ -193,17 +176,13 @@
                                                             </asp:GridView>
                 
                                                         </asp:Panel>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                                   
                                         </fieldset>
                                     </div>
                                     <div runat="server" id="divInwardFiles" style="display: none;">
                                         <fieldset class="fieldSetBorder">
                                             <legend>File Details </legend>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td colspan="7" width="100%">
+                                           
                                                         <asp:Panel ID="PanelgvFile" runat="server" ScrollBars="Both" BorderStyle="Solid"
                                                             Height="300px">
                                             <asp:GridView runat="server" ID="grdFilesDetails" CellSpacing="1" CellPadding="1"
@@ -289,25 +268,18 @@
                                                                 <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                                             </asp:GridView>
                                                         </asp:Panel>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                                    
                                         </fieldset>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" class="bordnone">
+                                
                                    
                                     <%--<asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="return ValidateInwardfields();"   />
                                   --%>
-                                    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="return ValidateInwardfields();"   />
+                                    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="return ValidateInwardfields();" type="button" CssClass="btn btn-primary"  />
                                   
-                                    <asp:Button ID="btnCancel" runat="server" Text="Clear" OnClientClick="return clearInwardfields();"
+                                    <asp:Button ID="btnCancel" runat="server" Text="Clear" OnClientClick="return clearInwardfields();" type="button" CssClass="btn btn-primary"
                                         OnClick="btnCancel_Click" />
-                                </td>
-                            </tr>
-                        </table>
+                               
                    
                 </div>
            
