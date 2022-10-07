@@ -128,79 +128,133 @@
                     }
                 }
             </script>--%>
-            <div class="middle">
-                <div class="frmbxhead" style="width: 200px; text-align: left">
-                    Customer Payment Details
+
+               <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Customer Payment Details</li>
+            </ol>
+            <div class="row">
+        <div class="col-md-12 col-lg-12">
+             <div class="b-b b-grey m-b-20">
+                  <h3 class="m-b-10">Customer Payment Details</h3>
                 </div>
-                <div class="frmbox">
-                    <table width="100%" style="border: 2px" border="0">
-                        <tr>
-                            <td>
-                                Company Group
-                            </td>
-                            <td>
-                                <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" Width="210"
+            </div>
+                </div>
+
+
+             <div class="row">
+              <div class="col-md-12">
+                <div class="card card-default">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class=""> Company Group</label>
+                                    <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged">
                                 </asp:DropDownList>
+                                  </div>
+                             
                                 <span id="Span3" style="color: Red;"></span>
-                                <br />
+                              
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCompanyGroup"
                                     ErrorMessage="Please select company Group." InitialValue="0" ForeColor="Red"
                                     ValidationGroup="SaveGroup" Display="Dynamic"></asp:RequiredFieldValidator>
-                            </td>
-                            <td>
-                                Customer
-                            </td>
-                            <td>
-                                <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" Width="210"
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Customer</label>
+                                  <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     OnSelectedIndexChanged="ddlCustomer_SelectedIndexChanged">
                                 </asp:DropDownList>
+                                  </div>
+                               
                                 <span id="Span2" style="color: Red;"></span>
-                                <br />
+                               
                                 <span id="SpnddlCustomer" style="color: Red;"></span>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="ddlCustomer"
                                     Display="Dynamic" ErrorMessage="Please select customer." InitialValue="0" ForeColor="Red"
                                     ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                            </td>
-                            <td>
-                                Invoice
-                            </td>
-                            <td>
-                                <asp:DropDownList ID="ddlInvoice" runat="server" Width="100" AutoPostBack="true"
+
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Invoice</label>
+                                   <asp:DropDownList ID="ddlInvoice" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
                                     OnSelectedIndexChanged="ddlInvoice_SelectedIndexChanged">
                                 </asp:DropDownList>
-                                <span id="Span1" style="color: Red;"></span>
-                                <br />
+                                
+                                  </div>
+                              <span id="Span1" style="color: Red;"></span>
+                               
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlInvoice"
                                     Display="Dynamic" ErrorMessage="Please select Invoice." InitialValue="" ForeColor="Red"
                                     ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                            </td>
-                        </tr>
+                          </div>
+                          </div>
+
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="form-group">
+                           <label class="">Payment type</label>
+                                  <asp:RadioButtonList runat="server" ID="rbtPaymentType" RepeatDirection="Horizontal"
+                                    RepeatColumns="3" AutoPostBack="true" OnSelectedIndexChanged="rbtPaymentType_SelectedIndexChanged">
+                                </asp:RadioButtonList>
+                                   </div>
+                                <span id="SpnddlCompanyGroup" style="color: Red;"></span>
+                             
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="rbtPaymentType"
+                                    Display="Dynamic" ErrorMessage="Please select Payment Type." InitialValue=""
+                                    ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default">
+                           <label class="">Transaction Number</label>
+                                  <asp:TextBox ID="txtTransactionNo" runat="server" CssClass="form-control"></asp:TextBox>
+                                  </div>
+                          </div>
+                          <div class="col-md-4">
+                                 <div class="form-group form-group-default">
+                           <label class="">Transaction Date</label>
+                                     <asp:TextBox ID="txtTransactionDate" runat="server" CssClass="datepicker1 form-control" onkeypress="return false;" ></asp:TextBox>
+                                     </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+           
+
+
+
+
+
+            <div class="middle">
+               
+                    
+               
+                <div class="frmbox">
+                    <table width="100%" style="border: 2px" border="0">
+                       
                         <tr>
                             <td>
                                 Payment type
                             </td>
                             <td>
-                                <asp:RadioButtonList runat="server" ID="rbtPaymentType" RepeatDirection="Horizontal"
-                                    RepeatColumns="3" AutoPostBack="true" OnSelectedIndexChanged="rbtPaymentType_SelectedIndexChanged">
-                                </asp:RadioButtonList>
-                                <span id="SpnddlCompanyGroup" style="color: Red;"></span>
-                                <%-- <br />--%>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="rbtPaymentType"
-                                    Display="Dynamic" ErrorMessage="Please select Payment Type." InitialValue=""
-                                    ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
+                                
                             </td>
                             <td>
-                                Transaction Number
+                                
                             </td>
                             <td>
-                                <asp:TextBox ID="txtTransactionNo" runat="server"></asp:TextBox>
+                                
                             </td>
                             <td>
-                                Transaction Date
+                                
                             </td>
                             <td>
-                                <asp:TextBox ID="txtTransactionDate" runat="server" CssClass="datepicker1" onkeypress="return false;"></asp:TextBox>
+                                
                             </td>
                         </tr>
                         <tr>
