@@ -61,74 +61,92 @@
     </style>
     <asp:UpdatePanel runat="server" ID="updInvoice">
         <ContentTemplate>
-            <div class="clear">
-            </div>
-            <div class="frmbxhead" style="width: 150px; z-index: 10">
-                <asp:LinkButton ID="lnkbtnInovice" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
+            
+
+
+            </ContentTemplate>
+        
+        <Triggers>
+            <asp:PostBackTrigger ControlID="btnGenrateInvoice" />
+            <asp:PostBackTrigger ControlID="grdInvoice" />
+        </Triggers>
+ </asp:UpdatePanel>
+                 <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Box Location</li>
+            </ol>
+
+
+            <div class="card card-transparent">
+
+     <ul class="nav nav-tabs nav-tabs-linetriangle" data-init-reponsive-tabs="dropdownfx">
+   <li class="nav-item">
+       <asp:LinkButton ID="lnkbtnInovice" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
                     CausesValidation="false" OnClick="lnkbtnInovice_Click"> Invoice</asp:LinkButton>
-            </div>
-            <div class="frmbxhead" style="margin-left: 250px !important; margin-bottom: -1px !important;
-                z-index: 0 !important;">
-                <asp:LinkButton ID="lnkbtnviewInvoice" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
+
+       </li>
+      <li class="nav-item">
+
+               <asp:LinkButton ID="lnkbtnviewInvoice" runat="server" Font-Underline="false" Style="color: #4f4f4f !important;"
                     CausesValidation="false" OnClick="lnkbtnviewInvoice_Click"> View Invoice</asp:LinkButton>
-            </div>
-            <div class="middle">
-                <div class="frmbox">
+
+          </li>
+         </ul>
+                <div class="tab-content">
+
+
+
+          
+            
                     <div runat="server" id="divGenrateInvoice">
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td colspan="4" align="center">
-                                    <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="Brown"></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    WareHouse
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlWareHouse" runat="server" Width="100" AutoPostBack="True"
-                                        OnSelectedIndexChanged="ddlWareHouse_SelectedIndexChanged">
+                        <asp:Label ID="lblMessage" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="Brown"></asp:Label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Warehouse</label>
+                                    <asp:DropDownList ID="ddlWareHouse" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlWareHouse_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
+                                    
+                                    </div>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlWareHouse"
                                         ErrorMessage="Please Select WareHouse." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                                </td>
-                                <td>
-                                    Date
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtInvoiceDate" runat="server" Style="width: 100px;" MaxLength="20"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Year
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlYear" runat="server" Width="100">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlYear"
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Year</label>
+                                    <asp:DropDownList ID="ddlYear" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"></asp:DropDownList>
+                                    </div>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlYear"
                                         ErrorMessage="Please Select Year." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                                </td>
-                                <td>
-                                    Month
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlMonth" runat="server" Width="100">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlMonth"
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default">
+                           <label class="">Date</label>
+                                     <asp:TextBox ID="txtInvoiceDate" runat="server" MaxLength="20" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Month</label>
+                                    <asp:DropDownList ID="ddlMonth" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"> </asp:DropDownList>
+                                    
+                                    </div>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlMonth"
                                         ErrorMessage="Please Select Month." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
+                            </div>
+                        </div>
+
+                            
+                          <div class="row">
+                              <div class="col-md-12">
                                     <div style="float: left">
                                         <b>Customer List </b>
                                     </div>
                                     <br />
                                     <div style="width: auto; height: 200px; overflow: auto; background-color: #FFF; border: 1px solid #596380;
                                         padding: 0 10px 0 0;">
-                                        <asp:GridView ID="grdCustomer" runat="server" AutoGenerateColumns="False" class="grid_data"
-                                            Width="100%" GridLines="None" AllowPaging="false">
+                                        <asp:GridView ID="grdCustomer" runat="server" AutoGenerateColumns="False" CssClass="table table-hover table-condense"
+                                             GridLines="None" AllowPaging="false">
                                             <Columns>
                                                 <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="7%">
                                                     <ItemTemplate>
@@ -166,125 +184,140 @@
                                             <EmptyDataRowStyle VerticalAlign="Middle" />
                                         </asp:GridView>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Service Tax
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtServicetax" runat="server" Style="width: 100px;" MaxLength="5"
+                                  </div>
+                              </div>
+
+                        <div class="row m-t-10">
+                            <div class="col-md-3">
+                                 <div class="form-group form-group-default">
+                           <label class="">Service Tax (%)</label>
+                                      <asp:TextBox ID="txtServicetax" runat="server"  CssClass="form-control" MaxLength="5"
                                         Enabled="false" onkeyup="onlyonedot(this.id,event,true)"></asp:TextBox>
-                                    &nbsp; (%)
-                                    <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtServicetax"
+                                   
+                                    
+                                     </div>
+                                <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtServicetax"
                                         Enabled="false" ValidChars="." FilterType="Numbers,Custom" />
-                                </td>
-                                <td>
-                                    Higher Education
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtHigherEducation" runat="server" Style="width: 100px;" MaxLength="5"
+                            </div>
+                            <div class="col-md-3">
+                                 <div class="form-group form-group-default">
+                           <label class="">Higher Education (%)</label>
+                                <asp:TextBox ID="txtHigherEducation" runat="server"  CssClass="form-control" MaxLength="5"
                                         onkeyup="onlyonedot(this.id,event,true)" Enabled="false"></asp:TextBox>
-                                    &nbsp; (%)
-                                    <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtHigherEducation"
+                                   
+                                    
+                                     </div>
+                                <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtHigherEducation"
                                         ValidChars="." FilterType="Numbers,Custom" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Other Charges
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtotherCharges" runat="server" Style="width: 100px;" MaxLength="9"
+                            </div>
+                            <div class="col-md-3">
+                                 <div class="form-group form-group-default">
+                           <label class="">Other Charges (%)</label>
+                                      <asp:TextBox ID="txtotherCharges" runat="server"  CssClass="form-control"  MaxLength="9"
                                         Enabled="false" onkeyup="onlyonedot(this.id,event,false)"></asp:TextBox>
-                                    &nbsp; (%)
-                                    <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtotherCharges"
+                                    
+                                   
+                                     </div>
+                                 <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtotherCharges"
                                         ValidChars="." FilterType="Numbers,Custom" />
-                                </td>
-                                <td>
-                                    Education Cess
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtEducationCess" runat="server" Style="width: 100px;" MaxLength="9"
+                            </div>
+                            <div class="col-md-3">
+                                 <div class="form-group form-group-default">
+                           <label class="">Education Cess (%)</label>
+                                     <asp:TextBox ID="txtEducationCess" runat="server"  CssClass="form-control" MaxLength="9"
                                         Enabled="false" onkeyup="onlyonedot(this.id,event,false)"></asp:TextBox>
-                                    &nbsp; (%)
-                                    <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtEducationCess"
+                                    
+                                    
+                                     </div>
+                                <ajax:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtEducationCess"
                                         ValidChars="." FilterType="Numbers,Custom" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <asp:Button ID="btnGenrateInvoice" runat="server" Text="Generate" ValidationGroup="SaveGroup"
-                                        OnClick="btnGenrateInvoice_Click" OnClientClick="return validateInvoice();" />
-                                    <asp:Button ID="btnCancel" runat="server" TabIndex="10" Text="Clear" OnClick="btnCancel_Click" />
-                                </td>
-                            </tr>
-                        </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <asp:Button ID="btnGenrateInvoice" runat="server" Text="Generate" ValidationGroup="SaveGroup"
+                                        OnClick="btnGenrateInvoice_Click" OnClientClick="return validateInvoice();" type="button" CssClass="btn btn-primary" />
+                                    <asp:Button ID="btnCancel" runat="server" TabIndex="10" Text="Clear" OnClick="btnCancel_Click" type="button" CssClass="btn btn-primary" />
+                            </div>
+
+                        </div>
+
+
+
+                              
                     </div>
                     <div runat="server" id="divViewInvoice">
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    Company Group
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlCompanyGroup" runat="server" Width="200" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged"
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Company Group</label>
+                                     <asp:DropDownList ID="ddlCompanyGroup" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged"
                                         AutoPostBack="true">
                                     </asp:DropDownList>
-                                    <br />
-                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="ddlCompanyGroup"
-                                        ErrorMessage="Please Select Company Group." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
-                                </td>
-                                <td>
-                                    Customer
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlCustomer" runat="server" Width="200">
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Customer</label>
+                                    <asp:DropDownList ID="ddlCustomer" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                    <br />
-                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="ddlCustomer"
-                                        ErrorMessage="Please Select Customer." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    From Year:<asp:DropDownList ID="ddlYearView" runat="server" Width="100">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                 <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">From Year</label>
+                                     <asp:DropDownList ID="ddlYearView" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                </td>
-                                <td>
-                                    From Month:
-                                    <asp:DropDownList ID="ddlMonthView" runat="server" Width="100">
+                                     </div>
+                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">From Month</label>
+                                    <asp:DropDownList ID="ddlMonthView" runat="server"  CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlYearView"
-                            ErrorMessage="Please Select Year." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
-                                </td>
-                                <td>
-                                    To Year:<asp:DropDownList ID="ddlToYearView" runat="server" Width="100">
+                                     </div>
+                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">To Year</label>
+                                    <asp:DropDownList ID="ddlToYearView" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                </td>
-                                <td>
-                                    To Month:
-                                    <asp:DropDownList ID="ddlToMonthView" runat="server" Width="100">
+                                     </div>
+                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">To Month</label>
+                                    <asp:DropDownList ID="ddlToMonthView" runat="server" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                     </asp:DropDownList>
-                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlMonthView"
-                            ErrorMessage="Please Select Month." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
-                                    &nbsp; &nbsp;
-                                    <asp:Button ID="btnSearch" runat="server" Text="Search" Style="margin-top: 0px;"
+                                     </div>
+                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                 <asp:Button ID="btnSearch" runat="server" Text="Search" type="button" CssClass="btn btn-primary"
                                         ValidationGroup="SaveGroupview" OnClick="btnSearch_Click" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="left">
-                                    <asp:Label ID="lblSearchResult" runat="server" Text=""></asp:Label>
-                                </td>
-                                <td colspan="2" align="right">
-                                    <asp:Label ID="lblTotalAmt" runat="server" Text=""></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <asp:GridView ID="grdInvoice" runat="server" AutoGenerateColumns="False" class="grid_data"
-                                        Width="100%" GridLines="None" AllowPaging="True" OnRowCommand="grdInvoice_RowCommand"
+                                <asp:Label ID="lblSearchResult" runat="server" Text=""></asp:Label>
+                                 <asp:Label ID="lblTotalAmt" runat="server" Text=""></asp:Label>
+                            </div>
+                        </div>
+
+                         <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="ddlCompanyGroup"
+                                        ErrorMessage="Please Select Company Group." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
+
+                         <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="ddlCustomer"
+                                        ErrorMessage="Please Select Customer." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
+                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlYearView"
+                            ErrorMessage="Please Select Year." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
+                         <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlMonthView"
+                            ErrorMessage="Please Select Month." InitialValue="0" ForeColor="Red" ValidationGroup="SaveGroupview"></asp:RequiredFieldValidator>--%>
+                        
+                                
+                                    <asp:GridView ID="grdInvoice" runat="server" AutoGenerateColumns="False" CssClass="table table-hover table-condense" GridLines="None" AllowPaging="True" OnRowCommand="grdInvoice_RowCommand"
                                         OnPageIndexChanging="grdInvoice_PageIndexChanging" OnRowDataBound="OnRowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="7%">
@@ -330,12 +363,9 @@
                                         <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                         <EmptyDataRowStyle VerticalAlign="Middle" />
                                     </asp:GridView>
-                                </td>
-                            </tr>
-                        </table>
+                                
                     </div>
-                </div>
-            </div>
+                
             <div id="divShowResult" class="divActivityRate" style="display: none;">
                 <div style="float: right">
                     <asp:HyperLink Text="Close" ForeColor="Blue" runat="server" Style="cursor: pointer"
@@ -348,14 +378,12 @@
                     </asp:GridView>
                 </div>
             </div>
+                    </div>
+                </div>
             <div id="blocker" style="display: none">
                 <div>
                     Loading...</div>
             </div>
-        </ContentTemplate>
-        <Triggers>
-            <asp:PostBackTrigger ControlID="btnGenrateInvoice" />
-            <asp:PostBackTrigger ControlID="grdInvoice" />
-        </Triggers>
-    </asp:UpdatePanel>
+        
+           
 </asp:Content>
