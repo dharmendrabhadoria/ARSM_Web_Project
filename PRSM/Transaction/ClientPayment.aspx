@@ -220,15 +220,134 @@
                                      </div>
                           </div>
                       </div>
+
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default">
+                           <label class="">Client Bank</label>
+                                   <asp:TextBox ID="txtBank" runat="server" CssClass="form-control"></asp:TextBox>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default">
+                           <label class="">Client Branch</label>
+                                   <asp:TextBox ID="txtBarnch" runat="server" CssClass="form-control"></asp:TextBox>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default">
+                           <label class="">Client A/c Number</label>
+                                    <asp:TextBox ID="txtAccountNo" runat="server" CssClass="form-control"></asp:TextBox>
+                               
+                              </div>
+                               <asp:RegularExpressionValidator Display="Dynamic" ControlToValidate="txtAccountNo"
+                                    ID="RegularExpressionValidator1" ValidationExpression="^[\d]{0,20}$" runat="server"
+                                    ErrorMessage="Only Numerics allowed. Maximum 20 characters allowed."></asp:RegularExpressionValidator>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default">
+                           <label class="">Cheque Number</label>
+                                   <asp:TextBox ID="txtChequeNo" runat="server" CssClass="form-control"></asp:TextBox>
+                                   </div>
+                          </div>
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default">
+                           <label class="">Cheque Date</label>
+                                   <asp:TextBox ID="txtChequeDate" runat="server" CssClass="datepicker1 form-control" onkeypress="return false;"></asp:TextBox>
+                                   </div>
+                          </div>
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default">
+                           <label class="">Invoice Amount</label>
+                                   <asp:TextBox ID="txtAmount" runat="server" Enabled="false" CssClass="form-control" onblur="Substrn()"></asp:TextBox>
+                                
+                                   </div>
+                              <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtAmount"
+                                    Display="Dynamic" ErrorMessage="Please Enter Transaction Amount." InitialValue=""
+                                    ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
+                          </div>
+                      </div>
+
+
+
+                       <%--  <asp:TextBox ID="txtAmount" runat="server" Enabled="false" onkeyup="FunCalculate()"></asp:TextBox>--%>
+
+                      <div class="row">
+                          <div class="col-md-3">
+                              <div class="form-group form-group-default">
+                           <label class="">TDS</label>
+                                  <asp:TextBox ID="txt_TDS" runat="server" MaxLength="200" onblur="Substrn()" CssClass="form-control"></asp:TextBox>
+                                    
+                                  </div>
+                              <asp:RegularExpressionValidator ID="RegularExpValTDS" runat="server" ControlToValidate="txt_TDS"
+                                        Display="Dynamic" ErrorMessage="Only Numerics allowed" ValidationExpression="^[\d]{0,20}$"></asp:RegularExpressionValidator>
+                          </div>
+                          <div class="col-md-3">
+                               <div class="form-group form-group-default">
+                           <label class="">Net Amount</label>
+                                   <asp:TextBox ID="txt_netamt" runat="server" onblur="CalDiff()" CssClass="form-control"></asp:TextBox>
+                                  </div>
+                          </div>
+                          <div class="col-md-3">
+                               <div class="form-group form-group-default">
+                           <label class="">Amount Received</label>
+                                    <asp:TextBox ID="txt_AmtRec" runat="server" onblur="CalDiff()" CssClass="form-control"></asp:TextBox>
+                                  </div>
+                          </div>
+                          <div class="col-md-3">
+                               <div class="form-group form-group-default">
+                          
+                                   <asp:Label ID="lbldiff" runat="server" Text="Difference" ></asp:Label>
+                                   <asp:TextBox ID="txt_diff" runat="server"  CssClass="form-control"></asp:TextBox>
+                                  </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-4">
+                               <div class="form-group form-group-default form-group-default-select2">
+                           <label class="">Status</label>
+                                   <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlStatus_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                        >
+                                    </asp:DropDownList>
+                                   </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default">
+                           <label class="">Reason if Cheque Bounced</label>
+                                   <asp:TextBox ID="txtBouncedreason" runat="server" MaxLength="200" TextMode="MultiLine"  CssClass="form-control"></asp:TextBox>
+                                   </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group form-group-default">
+                           <label class="">Remarks</label>
+                                  <asp:TextBox ID="txtRemarks" runat="server" MaxLength="500" TextMode="MultiLine"  CssClass="form-control"></asp:TextBox>
+                                   </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-12">
+
+                              <asp:Button ID="btnSave" runat="server" CausesValidation="true" OnClick="btnSave_Click" type="button" CssClass="btn btn-primary"
+                                        Text="Save" ValidationGroup="SaveGroup" OnClientClick=" return valNetAmt();" />
+                                    <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Clear" type="button" CssClass="btn btn-primary" />
+                          </div>
+                      </div>
+
+
                       </div>
                     </div>
                   </div>
                  </div>
            
 
-
-
-
+             <%-- <asp:TextBox ID="txt_TDS" runat="server" MaxLength="200" onkeyup="FunCalculate()"></asp:TextBox>--%>
+             <%--  <asp:TextBox ID="txt_netamt" runat="server" onkeyup="Calculate()"></asp:TextBox>--%>
+             <%--        <asp:TextBox ID="txt_AmtRec" runat="server" onkeyup="Calculate()"></asp:TextBox>--%>
 
             <div class="middle">
                
@@ -237,142 +356,23 @@
                 <div class="frmbox">
                     <table width="100%" style="border: 2px" border="0">
                        
-                        <tr>
-                            <td>
-                                Payment type
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Client Bank
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtBank" runat="server"></asp:TextBox>
-                            </td>
-                            <td>
-                                Client Branch
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtBarnch" runat="server"></asp:TextBox>
-                            </td>
-                            <td>
-                                Client A/c Number
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtAccountNo" runat="server"></asp:TextBox>
-                                <asp:RegularExpressionValidator Display="Dynamic" ControlToValidate="txtAccountNo"
-                                    ID="RegularExpressionValidator1" ValidationExpression="^[\d]{0,20}$" runat="server"
-                                    ErrorMessage="Only Numerics allowed. Maximum 20 characters allowed."></asp:RegularExpressionValidator>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Cheque Number
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtChequeNo" runat="server"></asp:TextBox>
-                            </td>
-                            <td>
-                                Cheque Date
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtChequeDate" runat="server" CssClass="datepicker1" onkeypress="return false;"></asp:TextBox>
-                            </td>
-                            <td>
-                                Invoice Amount
-                            </td>
-                            <td>
-                                <%--  <asp:TextBox ID="txtAmount" runat="server" Enabled="false" onkeyup="FunCalculate()"></asp:TextBox>--%>
-                                <asp:TextBox ID="txtAmount" runat="server" Enabled="false" onblur="Substrn()"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtAmount"
-                                    Display="Dynamic" ErrorMessage="Please Enter Transaction Amount." InitialValue=""
-                                    ForeColor="Red" ValidationGroup="SaveGroup"></asp:RequiredFieldValidator>
-                            </td>
-                        </tr>
+                        
+                        
+                        
                         <caption>
                             =
-                            <tr>
-                                <td>
-                                    TDS
-                                </td>
-                                <td>
-                                    <%-- <asp:TextBox ID="txt_TDS" runat="server" MaxLength="200" onkeyup="FunCalculate()"></asp:TextBox>--%>
-                                    <asp:TextBox ID="txt_TDS" runat="server" MaxLength="200" onblur="Substrn()"></asp:TextBox>
-                                    <asp:RegularExpressionValidator ID="RegularExpValTDS" runat="server" ControlToValidate="txt_TDS"
-                                        Display="Dynamic" ErrorMessage="Only Numerics allowed" ValidationExpression="^[\d]{0,20}$"></asp:RegularExpressionValidator>
-                                </td>
-                                <td>
-                                    Net Amount
-                                </td>
-                                <td>
-                                    <%--  <asp:TextBox ID="txt_netamt" runat="server" onkeyup="Calculate()"></asp:TextBox>--%>
-                                    <asp:TextBox ID="txt_netamt" runat="server" onblur="CalDiff()"></asp:TextBox>
-                                </td>
-                                <td>
-                                    Amount Received
-                                </td>
-                                <td>
-                                    <%--        <asp:TextBox ID="txt_AmtRec" runat="server" onkeyup="Calculate()"></asp:TextBox>--%>
-                                    <asp:TextBox ID="txt_AmtRec" runat="server" onblur="CalDiff()"></asp:TextBox>
-                                </td>
-                                <td>
-                                    <asp:Label ID="lbldiff" runat="server" Text="Difference"></asp:Label>e
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txt_diff" runat="server"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Status
-                                </td>
-                                <td>
-                                    <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlStatus_SelectedIndexChanged"
-                                        Width="100">
-                                    </asp:DropDownList>
-                                </td>
-                                <td>
-                                    Reason if Cheque Bounced
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtBouncedreason" runat="server" MaxLength="200" TextMode="MultiLine"></asp:TextBox>
-                                </td>
-                                <td>
-                                    Remarks
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="txtRemarks" runat="server" MaxLength="500" TextMode="MultiLine"></asp:TextBox>
-                                </td>
-                            </tr>
+                            
+                            
                             <tr>
                                 <td align="center" colspan="6">
-                                    <asp:Button ID="btnSave" runat="server" CausesValidation="true" OnClick="btnSave_Click"
-                                        Text="Save" ValidationGroup="SaveGroup" OnClientClick=" return valNetAmt();" />
-                                    <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Clear" />
+                                    
                                 </td>
                             </tr>
                         </caption>
                     </table>
-                    <table width="100%">
-                        <tr>
-                            <td colspan="6">
+                    
                                 <asp:GridView ID="gvAccountMaster" runat="server" AutoGenerateColumns="False" AllowPaging="true"
-                                    PageSize="20" Width="50%" border="0" CssClass="grid_data" GridLines="None" OnRowCommand="gvAccountMaster_RowCommand"
+                                    PageSize="20" border="0" CssClass="table table-hover table-condense" GridLines="None" OnRowCommand="gvAccountMaster_RowCommand"
                                     OnPageIndexChanging="gvAccountMaster_PageIndexChanging">
                                     <Columns>
                                         <asp:TemplateField HeaderText="Sr No." ItemStyle-Width="7%">
@@ -454,9 +454,7 @@
                                     <HeaderStyle HorizontalAlign="Left" BorderWidth="0" />
                                     <AlternatingRowStyle CssClass="AlternativeRowStyle" />
                                 </asp:GridView>
-                            </td>
-                        </tr>
-                    </table>
+                           
                 </div>
             </div>
         </ContentTemplate>
