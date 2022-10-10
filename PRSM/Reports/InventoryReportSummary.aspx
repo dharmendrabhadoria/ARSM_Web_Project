@@ -134,72 +134,102 @@
             <script type="text/javascript">
                 Sys.Application.add_load(BindDates);
             </script>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Inventory</li>
+            </ol>
 
+            <div class="card card-transparent">
 
-
-
-
-            <div class="middle">
-                <div class="frmbxhead" style="z-index: 0 !important; width: 200px;">
-                    <asp:LinkButton ID="lnkbtnInventorySummary" runat="server" Font-Underline="false"
+     <ul class="nav nav-tabs nav-tabs-linetriangle" data-init-reponsive-tabs="dropdownfx">
+   <li class="nav-item">
+        <asp:LinkButton ID="lnkbtnInventorySummary" runat="server" Font-Underline="false"
                         Style="color: #4f4f4f !important;" CausesValidation="false" OnClick="lnkbtnInventorySummary_Click">Inventory Summary</asp:LinkButton>
-                </div>
-                <div class="frmbxhead" style="margin-left: 300px; width: 160px; z-index: 1 !important;">
-                    <asp:LinkButton ID="lnkbtnInventoryDeatils" runat="server" Font-Underline="false"
+
+        </li>
+      <li class="nav-item">
+
+           <asp:LinkButton ID="lnkbtnInventoryDeatils" runat="server" Font-Underline="false"
                         Style="color: #4f4f4f !important;" CausesValidation="false" OnClick="lnkbtnInventoryDeatils_Click">Inventory Details</asp:LinkButton>
-                </div>
-                <div class="frmbox">
-                    <center>
-                        <div id="divInventorySummary" runat="server" style="display: block;">
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td colspan="5">
-                                        <asp:RadioButtonList ID="rdlstbtnReport" runat="server" AutoPostBack="True" Height="16px"
+
+           </li>
+         </ul>
+
+
+                <div class="tab-content">
+                     <div id="divInventorySummary" runat="server" style="display: block;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <asp:RadioButtonList ID="rdlstbtnReport" runat="server" AutoPostBack="True" Height="16px"
                                             RepeatDirection="Horizontal" Width="300px" OnSelectedIndexChanged="rdlstbtnReport_SelectedIndexChanged">
-                                            <asp:ListItem Selected="True" Text="Customer-Wise" Value="1"></asp:ListItem>
+                                            <asp:ListItem Selected="True" Text=" Customer-Wise" Value="1"></asp:ListItem>
                                             <%--<asp:ListItem Text="Department-Wise" Value="2"> </asp:ListItem>--%>
-                                            <asp:ListItem Text="Yearwise" Value="3"> </asp:ListItem>
+                                            <asp:ListItem Text=" Yearwise" Value="3"> </asp:ListItem>
                                         </asp:RadioButtonList>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10%">
-                                        Company Group
-                                    </td>
-                                    <td style="width: 10%">
-                                        <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged"
-                                            Width="250">
+                        </div>
+
+                    </div>
+
+                         <div class="row">
+                             <div class="col-md-4">
+                                 <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Company Group</label>
+                                     <asp:DropDownList ID="ddlCompanyGroup" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCompanyGroup_SelectedIndexChanged" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2"
+                                            >
                                         </asp:DropDownList>
-                                    </td>
-                                    <td style="width: 10%">
-                                        Customer
-                                    </td>
-                                    <td style="width: 10%">
-                                        <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" Width="250">
+                                     </div>
+                             </div>
+                             <div class="col-md-4">
+                                 <div class="form-group form-group-default form-group-default-select2 required">
+                           <label class="">Customer</label>
+                                     <asp:DropDownList ID="ddlCustomer" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                         </asp:DropDownList>
-                                    </td>
-                                    <td>
-                                        <asp:Label runat="server" Text="Year" ID="lblyear"></asp:Label>
-                                        <asp:DropDownList ID="ddlyears" runat="server" Width="80" AutoPostBack="true">
+                                     </div>
+                             </div>
+                             <div class="col-md-4">
+                                 <asp:Label runat="server" Text="Year" ID="lblyear">Year</asp:Label>
+                                        <asp:DropDownList ID="ddlyears" runat="server" AutoPostBack="true" CssClass="form-group form-group-default form-group-default-select2 required" data-init-plugin="select2">
                                             <asp:ListItem Selected="True" Text="All" Value="0"> </asp:ListItem>
                                             <asp:ListItem Text="2013" Value="2013"> </asp:ListItem>
                                             <asp:ListItem Text="2014" Value="2014"> </asp:ListItem>
                                             <asp:ListItem Text="2015" Value="2015"> </asp:ListItem>
                                         </asp:DropDownList>
-                                    </td>
-                                </tr>
+                             </div>
+
+                         </div>
+                         <div class="row">
+                             <div class="col-md-6">
+                                 <div class="form-group form-group-default">
+                           <asp:Label ID="lblfrmdt" runat="server" Text="From Date"></asp:Label>
+                                     <asp:TextBox ID="txtfromDate" runat="server" CssClass="datepicker1 form-control" onkeypress="return false;"> </asp:TextBox>
+                                     </div>
+                             </div>
+                             <div class="col-md-6">
+                                  <div class="form-group form-group-default">
+                           <asp:Label ID="lbltodate" runat="server" Text="To Date"></asp:Label>
+                                      <asp:TextBox ID="txttodate" runat="server" CssClass="datepicker1 form-control" onkeypress="return false;"> </asp:TextBox>
+                                     </div>
+                             </div>
+
+                         </div>
+
+
+
+                   
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                               
                                 <tr>
                                     <td style="width: 10%">
-                                        <asp:Label ID="lblfrmdt" runat="server" Text="From Date"></asp:Label>
+                                        
                                     </td>
                                     <td style="width: 10%">
-                                        <asp:TextBox ID="txtfromDate" runat="server" Width="150" CssClass="datepicker1" onkeypress="return false;"> </asp:TextBox>
+                                        
                                     </td>
                                     <td style="width: 10%">
-                                        <asp:Label ID="lbltodate" runat="server" Text="To Date"></asp:Label>
+                                        
                                     </td>
                                     <td style="width: 10%">
-                                        <asp:TextBox ID="txttodate" runat="server" Width="150" CssClass="datepicker1" onkeypress="return false;"> </asp:TextBox>
+                                        
                                     </td>
                                     <td>
                                     </td>
@@ -539,8 +569,18 @@
                                 </tr>
                             </table>
                         </div>
-                        <!--For In File-->
-                        <div id="divShowInFilesdetails" class="divActivityRate" style="width: 910px !important;">
+
+
+
+
+
+
+
+                    
+
+
+
+                    <div id="divShowInFilesdetails" class="divActivityRate" style="width: 910px !important;">
                             <div style="float: right">
                                 <asp:Button Text="Close" ForeColor="Blue" runat="server" Style="cursor: pointer"
                                     ID="btnInFilesdetails" OnClientClick=" divHideInFilesdetails();" OnClick="btnInFilesdetails_Click">
@@ -588,8 +628,8 @@
                                 </table>
                             </div>
                         </div>
-                        <!--For In Box-->
-                        <div id="divShowInBoxdetails" class="divActivityRate" style="width: 910px !important;">
+
+                    <div id="divShowInBoxdetails" class="divActivityRate" style="width: 910px !important;">
                             <div style="float: right">
                                 <asp:Button Text="Close" ForeColor="Blue" runat="server" Style="cursor: pointer"
                                     ID="btnInBoxdetails" OnClientClick=" divHideInBoxdetails();" OnClick="btnInBoxdetails_Click">
@@ -625,8 +665,8 @@
                                 </table>
                             </div>
                         </div>
-                        <!--Out Files Details-->
-                        <div id="divShowOutFilesdetails" class="divActivityRate" style="width: 910px !important;">
+
+                    <div id="divShowOutFilesdetails" class="divActivityRate" style="width: 910px !important;">
                             <div style="float: right">
                                 <asp:Button Text="Close" ForeColor="Blue" runat="server" Style="cursor: pointer"
                                     ID="btnOutFilesdetails" OnClientClick=" divHideOutFilesdetails();" OnClick="btnOutFilesdetails_Click">
@@ -673,8 +713,8 @@
                                 </table>
                             </div>
                         </div>
-                        <!--Out Box Details-->
-                        <div id="divShowOutBoxdetails" class="divActivityRate" style="width: 910px !important;">
+
+                    <div id="divShowOutBoxdetails" class="divActivityRate" style="width: 910px !important;">
                             <div style="float: right">
                                 <asp:Button Text="Close" ForeColor="Blue" runat="server" Style="cursor: pointer"
                                     ID="btnOutBoxdetails" OnClientClick=" divHideOutBoxdetails();" OnClick="btnOutBoxdetails_Click">
@@ -710,9 +750,9 @@
                                 </table>
                             </div>
                         </div>
-                    </center>
-                </div>
-            </div>
+                    </div>
+
+           
             </div>
             <div id="blocker" style="display: none">
                 <div>

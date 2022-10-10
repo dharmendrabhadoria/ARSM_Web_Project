@@ -1,0 +1,16 @@
+------------------Error Source: System.Web ------------------
+Error Message: A field or property with the name 'File Type' was not found on the selected data source.
+Error StackTrace:    at System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object& data)
+   at System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   at System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at InventoryReportSummary.GetInOutBoxeFileDetails(String CommandName) in c:\Users\Shrutika Sawant\Desktop\Apaar Infosystems\ARSM\ARSM_Web_Project\PRSM\Reports\InventoryReportSummary.aspx.cs:line 1129
+Time: 07-10-2022 18:52:06
